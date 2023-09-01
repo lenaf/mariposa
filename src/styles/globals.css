@@ -3,15 +3,38 @@
 h1 {
   @apply text-2xl;
 }
+
 h2 {
   @apply text-xl;
 }
+
 h3 {
   @apply text-lg;
-}
-a {
-  @apply text-blue-600;
 }
 
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Glaston';
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url(/fonts/Glaston.ttf);
+}
+
+@font-face {
+  font-family: 'Vremena';
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url(/fonts/VremenaGroteskBook.otf);
+}
+
+@font-face {
+  font-family: 'Minion';
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url(/fonts/MinionPro-Regular.otf);
+}
