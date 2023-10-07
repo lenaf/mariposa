@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Header from "./header"
 import Instagram from "./instagram"
@@ -37,11 +37,13 @@ const Layout = ({ children }) => {
       <div className={`${colorSchemeClass} h-screen`}>
         <main className="h-5/6">{children}</main>
         <footer className="font-vremena text-center p-6 ">
-          <div >
-            info@mariposa.gallery
+          <div>
+            <a href="mailto: info@mariposa.gallery">info@mariposa.gallery</a>
           </div>
           <div>
-            @mariposa.drive
+            <Link to='https://www.instagram.com/mariposa.drive/'>
+              @mariposa.drive
+            </Link>
           </div>
         </footer>
       </div>
