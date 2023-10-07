@@ -6,18 +6,10 @@ import Butterfly from "../components/butterfly"
 import Logo from "../components/logo"
 
 const IndexPage = () => {
-  const colorSchemeClass =
-    [
-      'fill-electricBlue text-electricBlue bg-yellow',
-      'fill-lightPink text-lightPink bg-brown',
-      'fill-white text-white bg-mutedBlue',
-      'fill-red text-red bg-hotPink'
-    ][Math.floor(Math.random() * 4)]
-
   return (
     <Layout>
       <SEO title="Mariposa Gallery" />
-      <div className={`${colorSchemeClass} text-lg text-center h-full flex flex-col justify-center items-center`}>
+      <div className={`text-lg text-center h-full flex flex-col justify-center items-center`}>
         <h1><Logo /></h1>
         <div className="font-vremena leading-6 mb-6">
           <div>presents our inaugural exhibition,</div>
