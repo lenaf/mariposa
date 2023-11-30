@@ -16,6 +16,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: "gatsby-plugin-breakpoints",
+      options: {
+        queries: {
+          desktop: '(min-width: 768px)',
+        },
+      }
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -28,7 +36,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/butterfly.svg`, // This path is relative to the root of the site.
+        icon: `src/images/butterfly.png`, // This path is relative to the root of the site.
       },
     },
     // {

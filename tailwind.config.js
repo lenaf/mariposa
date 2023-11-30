@@ -21,7 +21,29 @@ module.exports = {
         red: '#FF3A19',
 
       },
+      spacing: {
+        4.5: '18px',
+        9.5: '38px',
+        10.5: '42px',
+        16.5: '68px',
+        18: '74px',
+        19: '78px',
+
+      },
+      fontSize: {
+        15: '15px'
+      },
+      maxWidth: {
+        258: '258px',
+        285: '285px',
+        395: '395px',
+        543: '543px'
+      },
+      height: {
+        90: '90vh'
+      }
     }
+
   },
   variants: {},
   plugins: [],
