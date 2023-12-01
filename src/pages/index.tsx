@@ -5,7 +5,7 @@ import Past from "./past";
 
 const IndexPage = () => {
   return (
-    <Past />
+    ' TEST'
   )
 }
 
