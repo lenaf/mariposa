@@ -2,8 +2,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import pSchlesinger from "../images/pSchlesinger.png";
-import butterfly from "../images/butterfly.png";
+// import pSchlesinger from "../images/pSchlesinger.png";
+// import butterfly from "../images/butterfly.png";
 
 
 
@@ -26,14 +26,14 @@ const Past = () => {
           </div>
 
           {/* MOBILE ONLY IMAGE */}
-          <div className="md:hidden">
+          {/* <div className="md:hidden">
             <img className="mb-2" src={pSchlesinger} alt="Peter Schlesinger Photograph" />
             <div className="text-center mb-9">Tina Chow and Paloma Picasso reapplying their makeup during Paloma’s wedding at Karl Lagerfeld’s apartment (1978)</div>
-          </div>
+          </div> */}
 
           {/* PRESS */}
           <div className="mb-4.5 flex gap-0.5	align-center">
-            <img width={'15px'} src={butterfly} />PRESS<img width={'15px'} src={butterfly} />
+            {/* <img width={'15px'} src={butterfly} />PRESS<img width={'15px'} src={butterfly} /> */}
           </div>
           <div className="mb-4">Peter Schlesinger and Manolo Blahnik Look Back on the Golden Age of Paris, Interview Magazine</div>
           <div className="mb-4">Les Clichés de Peter Schlesinger S'exposent à Paris, Vogue </div>
@@ -42,7 +42,7 @@ const Past = () => {
 
           {/* INFO */}
           <div className="mb-4.5 flex gap-0.5	align-center">
-            <img width={'15px'} src={butterfly} />INFORMATION<img width={'15px'} src={butterfly} />
+            {/* <img width={'15px'} src={butterfly} />INFORMATION<img width={'15px'} src={butterfly} /> */}
           </div>
           <div className="mb-4">“The work of the young is to be alive to the present, and the present after that. That’s the work of the artist, too– to immerse himself in the moment. Peter’s pictures document not only his openness to the current events and fleeting wisdom of the past, but to what he saw and what he made of it.” </div>
           <div className="mb-4">
@@ -55,10 +55,10 @@ const Past = () => {
         </div>
 
         {/* DESKTOP ONLY IMAGE */}
-        <div className="hidden md:block mt-40 mx-16 md:w-1/3 lg:w-1/2 max-w-395">
+        {/* <div className="hidden md:block mt-40 mx-16 md:w-1/3 lg:w-1/2 max-w-395">
           <img className="mb-2 mx-auto" src={pSchlesinger} alt="Peter Schlesinger Photograph" />
           <div className="text-center mb-9 px-4">Tina Chow and Paloma Picasso reapplying their makeup during Paloma’s wedding at Karl Lagerfeld’s apartment (1978)</div>
-        </div>
+        </div> */}
 
       </div>
     </Layout >
