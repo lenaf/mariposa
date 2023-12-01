@@ -1,10 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import Logo from "./logo"
-import { useLocation } from '@reach/router';
 
 const Layout = ({ children, }) => {
-  const location = useLocation();
   return (
     <div className="text-xs md:text-15 font-vremena">
       <div className="md:flex md:gap-4">
@@ -23,8 +21,8 @@ const Layout = ({ children, }) => {
         </nav>
         <main className="grow">{children}</main>
       </div>
-      <footer className={`${location.pathname === '/about' ? 'hidden' : ''} md:block font-glaston text-center md:text-left p-6 `}>
-        <div>50 Rue de Turenne, Paris 3</div>
+      <footer className={`text-base font-glaston text-center md:text-left p-6 `}>
+        <div className="hidden md:block">50 Rue de Turenne, Paris 3</div>
       </footer>
     </div>
   )
