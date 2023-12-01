@@ -44,7 +44,7 @@ const Past = () => {
           <a className="mb-4" target="_blank" href="https://www.harpersbazaar.fr/culture/rencontre-avec-lartiste-et-icone-peter-schlesinger_1267">
             Rencontre avec l'Artiste et Icône Peter Schlesinger, Harper Bazaar
           </a>
-          <a className="mb-4" target="_blank" href="https://airmail.news/arts-intel/events/peter-schlesinger-france-1969-1979">
+          <a className="mb-9" target="_blank" href="https://airmail.news/arts-intel/events/peter-schlesinger-france-1969-1979">
             Peter Schlesinger: France 1969–1979, The Arts Intel Report
           </a>
 
