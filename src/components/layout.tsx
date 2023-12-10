@@ -18,7 +18,7 @@ const Layout = ({ children, }) => {
               Past
             </Link>
           </div>
-          <div className={`hidden md:block text-base font-glaston text-center p-6 mt-auto`}>
+          <div className={`hidden md:block text-base font-glaston text-center mt-auto`}>
             50 Rue de Turenne, Paris 3
           </div>
         </nav>

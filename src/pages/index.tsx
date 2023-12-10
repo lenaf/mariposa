@@ -10,7 +10,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Mariposa Gallery" description="Past Exhibitions" />
       <div className="flex justify-around gap-6 lg:gap-10 md:h-screen">
-        <div className="w-64 md:max-w-543 md:w-2/3 lg:w-1/2 flex flex-col overflow-scroll">
+        <div className="w-64 md:max-w-543 md:w-1/2 lg:w-1/2 flex flex-col overflow-scroll">
           <div className="md:px-4 md:mt-14 ">
 
             {/* TITLE AND DATES */}
@@ -33,8 +33,8 @@ const IndexPage = () => {
         </div>
 
         {/* DESKTOP ONLY IMAGE */}
-        <div className="hidden md:flex mx-16 md:w-1/3 lg:w-1/2 max-w-395 flex-col h-full overflow-scroll">
-          <div className="px-4 mt-16">
+        <div className="hidden md:flex md:w-1/3 lg:w-1/2 max-w-395 flex-col h-full overflow-scroll">
+          <div className="px-4 mt-16 mb-4">
             <img className="mb-2 mx-auto" src={burnell} alt="Burnell Photograph" />
           </div>
         </div>

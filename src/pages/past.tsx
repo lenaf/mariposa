@@ -12,7 +12,7 @@ const Past = () => {
     <Layout>
       <SEO title="Mariposa Gallery" description="Past Exhibitions" />
       <div className="flex justify-around gap-6 lg:gap-10 md:h-screen">
-        <div className="w-64 md:max-w-543 md:w-2/3 lg:w-1/2 flex flex-col overflow-scroll">
+        <div className="w-64 md:max-w-543 md:w-1/2 lg:w-1/2 flex flex-col overflow-scroll">
           <div className="md:px-4 md:mt-14 ">
             {/* TITLE AND DATES */}
             <div className="mb-4.5 text-center md:text-left w-full">
@@ -35,18 +35,26 @@ const Past = () => {
             <div className="mb-4.5 flex gap-0.5	align-center">
               <img width={'15px'} src={butterfly} />PRESS<img width={'15px'} src={butterfly} />
             </div>
-            <a className="mb-4" target="_blank" href="https://www.interviewmagazine.com/art/peter-schlesinger-and-manolo-blahnik-look-back-on-the-golden-age-of-paris" >
-              Peter Schlesinger and Manolo Blahnik Look Back on the Golden Age of Paris, Interview Magazine
-            </a>
-            <a className="mb-4" target="_blank" href="https://www.vogue.fr/article/peter-schlesinger-david-hockney-andy-warhol-galerie-mariposa-paris-photographie-exposition-grace-coddington-paloma-picasso"  >
-              Les Clichés de Peter Schlesinger S'exposent à Paris, Vogue
-            </a>
-            <a className="mb-4" target="_blank" href="https://www.harpersbazaar.fr/culture/rencontre-avec-lartiste-et-icone-peter-schlesinger_1267">
-              Rencontre avec l'Artiste et Icône Peter Schlesinger, Harper Bazaar
-            </a>
-            <a className="mb-9" target="_blank" href="https://airmail.news/arts-intel/events/peter-schlesinger-france-1969-1979">
-              Peter Schlesinger: France 1969–1979, The Arts Intel Report
-            </a>
+            <div className="mb-4">
+              <a target="_blank" href="https://www.interviewmagazine.com/art/peter-schlesinger-and-manolo-blahnik-look-back-on-the-golden-age-of-paris" >
+                Peter Schlesinger and Manolo Blahnik Look Back on the Golden Age of Paris, Interview Magazine
+              </a>
+            </div>
+            <div className="mb-4">
+              <a target="_blank" href="https://www.vogue.fr/article/peter-schlesinger-david-hockney-andy-warhol-galerie-mariposa-paris-photographie-exposition-grace-coddington-paloma-picasso"  >
+                Les Clichés de Peter Schlesinger S'exposent à Paris, Vogue
+              </a>
+            </div>
+            <div className="mb-4">
+              <a target="_blank" href="https://www.harpersbazaar.fr/culture/rencontre-avec-lartiste-et-icone-peter-schlesinger_1267">
+                Rencontre avec l'Artiste et Icône Peter Schlesinger, Harper Bazaar
+              </a>
+            </div>
+            <div className="mb-8">
+              <a target="_blank" href="https://airmail.news/arts-intel/events/peter-schlesinger-france-1969-1979">
+                Peter Schlesinger: France 1969–1979, The Arts Intel Report
+              </a>
+            </div>
 
             {/* INFO */}
             <div className="mb-4.5 flex gap-0.5	align-center">
@@ -64,8 +72,8 @@ const Past = () => {
         </div>
 
         {/* DESKTOP ONLY IMAGE */}
-        <div className="hidden md:flex mx-16 md:w-1/3 lg:w-1/2 max-w-395 flex-col h-full overflow-scroll">
-          <div className="px-4 mt-16">
+        <div className="hidden md:flex md:w-1/3 lg:w-1/2 max-w-395 flex-col h-full overflow-scroll">
+          <div className="px-4 mt-16 mb-4">
             <img className="mb-2 mx-auto" src={pSchlesinger} alt="Peter Schlesinger Photograph" />
             <div className="text-center px-4">Tina Chow and Paloma Picasso reapplying their makeup during Paloma’s wedding at Karl Lagerfeld’s apartment (1978)</div>
           </div>

@@ -14,7 +14,7 @@ const About = (props: PageProps) => {
   return (
     <Layout>
       <SEO title="Mariposa Gallery" description="About" />
-      <div className="flex md:h-90" >
+      <div className="flex md:h-90 md:h-screen" >
         <div
           className="flex flex-col justify-center items-center mx-auto my-auto h-100"
           style={{
