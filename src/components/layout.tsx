@@ -12,7 +12,7 @@ const Layout = ({ children, }) => {
     <div className="text-xs md:text-15 font-vremena">
       <div className="md:flex md:gap-4">
         <nav className="flex flex-col pt-18 md:pt-10.5 px-9.5 pb-9 md:max-w-80">
-          <div className="flex items-center justify-center md:mb-6">
+          <div className="flex items-center justify-center md:justify-start md:mb-6">
             <button onClick={() => setIsMobileNavOpen(true)}>
               <CiMenuBurger className="mr-6 md:hidden" size={24} />
             </button>
