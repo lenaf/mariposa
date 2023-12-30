@@ -7,19 +7,19 @@ const Nav = () => {
     return (
         <div className="flex flex-col text-start justify-start gap-x-4.5 leading-5 font-thin	">
             <Link
-                className={`hover:font-extrabold ${pathname === `/about` ? 'font-extrabold' : ''}`}
+                className={`hover:font-semibold ${pathname === `/about` ? 'font-semibold' : ''}`}
                 to={`/about`}
             >
                 About
             </Link>
             <Link
-                className="hover:font-extrabold"
+                className="hover:font-semibold"
                 to={`/schlesinger`}
             >
                 Past
             </Link>
             <Link
-                className={`ml-2 hover:font-extrabold ${pathname === `/schlesinger` ? 'font-extrabold' : ''}`}
+                className={`ml-2 hover:font-semibold ${pathname === `/schlesinger` ? 'font-semibold' : ''}`}
                 to={`/schlesinger`}
             >
                 Peter Schlesinger: France 1969 - 1979
