@@ -14,7 +14,7 @@ const Layout = ({ children, }) => {
         <nav className="flex flex-col pt-18 md:pt-10.5 px-9.5 pb-9 md:max-w-80">
           <div className="flex items-center justify-center md:justify-start md:mb-6">
             <button onClick={() => setIsMobileNavOpen(true)}>
-              <CiMenuBurger className="mr-6 md:hidden" size={16} />
+              <CiMenuBurger className="mr-6 md:hidden" size={20} />
             </button>
             <Link className="shrink flex" to={`/`}>
               <h1><Logo className="flex justify-center md:justify-start" /></h1>
