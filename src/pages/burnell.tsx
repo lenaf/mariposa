@@ -15,7 +15,7 @@ const Burnell = () => {
 
             {/* TITLE AND DATES */}
             <div className="mb-4.5 text-center md:text-left w-full ">
-              <div>Carly Burnell</div>
+              <div>Carly Burnell: où il n’y a rien / where there is nothing</div>
               <div>
                 <span className="font-glaston">January </span>
                 <span>16, 2024 - </span>
