@@ -25,7 +25,7 @@ const Burnell = () => {
             </div>
 
             {/* MOBILE ONLY IMAGE */}
-            <div className="md:hidden">
+            <div className="md:hidden mb-9">
               <img className="mb-2" src={burnell} alt="Burnell Photograph" />
             </div>
 
