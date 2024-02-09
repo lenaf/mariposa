@@ -2,10 +2,161 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import pSchlesinger from "../images/pSchlesinger.png";
 import butterfly from "../images/butterfly.png";
+import schlesingerInstallA from "../images/schlesinger/install/A.jpg";
+import schlesingerInstallB from "../images/schlesinger/install/B.jpg";
+import schlesingerInstallC from "../images/schlesinger/install/C.jpg";
+import schlesingerInstallD from "../images/schlesinger/install/D.jpg";
+import schlesingerInstallE from "../images/schlesinger/install/E.jpg";
+import schlesingerInstallF from "../images/schlesinger/install/F.jpg";
+import schlesingerInstallG from "../images/schlesinger/install/G.jpg";
+import schlesingerInstallH from "../images/schlesinger/install/H.jpg";
+import schlesingerWorkA from "../images/schlesinger/works/A.jpg";
+import schlesingerWorkB from "../images/schlesinger/works/B.jpg";
+import schlesingerWorkC from "../images/schlesinger/works/C.jpg";
+import schlesingerWorkD from "../images/schlesinger/works/D.jpg";
+import schlesingerWorkE from "../images/schlesinger/works/E.jpg";
+import schlesingerWorkF from "../images/schlesinger/works/F.jpg";
+import schlesingerWorkG from "../images/schlesinger/works/G.jpg";
+import schlesingerWorkH from "../images/schlesinger/works/H.jpg";
+import schlesingerWorkI from "../images/schlesinger/works/I.jpg";
+import schlesingerWorkJ from "../images/schlesinger/works/J.jpg";
+import schlesingerWorkK from "../images/schlesinger/works/K.jpg";
 
 
+const Images = () => (
+  <div>
+    <img className="mb-2" src={schlesingerWorkA} />
+    <div className="mb-4">
+      <div>Peter Schlesinger</div>
+      <div>David Hockney, Pavillion Sevigne, Vichy, 1970</div>
+      <div>Archival Pigment Print</div>
+      <div>11 x 17 in</div>
+      <div>27.9 x 43.2 cm</div>
+      <div>Edition of 10</div>
+      <div>SCHPE002</div>
+    </div>
+
+    <img className="mb-2" src={schlesingerWorkB} />
+    <div className="mb-4">
+      <div>Peter Schlesinger</div>
+      <div>Robert Mapplethorpe on the Boulevard Saint Germain, Paris, 1971</div>
+      <div>Archival Pigment Print</div>
+      <div>11 x 17 in.</div>
+      <div>43.2 x 27.9 cm</div>
+      <div>Edition of 10</div>
+      <div>SCHPE009</div>
+    </div>
+
+    <img className="mb-2" src={schlesingerWorkC} />
+    <div className="mb-4">
+      <div>Peter Schlesinger</div>
+      <div>Andy Warhol and Rex Reed in a Taxi, Monaco, 1974</div>
+      <div>Archival Pigment Print</div>
+      <div>11 x 17 in.</div>
+      <div>43.2 x 27.9 cm</div>
+      <div>Edition of 10</div>
+      <div>SCHPE010</div>
+    </div>
+
+    <img className="mb-2" src={schlesingerWorkD} />
+    <div className="mb-4">
+      <div>Peter Schlesinger</div>
+      <div>La Piscine Deligny, 1975</div>
+      <div>Archival Pigment Print</div>
+      <div>11 x 17 in.</div>
+      <div>43.2 x 27.9 cm</div>
+      <div>Edition of 10</div>
+      <div>SCHPE008</div>
+    </div>
+
+    <img className="mb-2" src={schlesingerWorkE} />
+    <div className="mb-4">
+      <div>Peter Schlesinger</div>
+      <div>La Piscine Deligny, Paris, 1975</div>
+      <div>Archival Pigment Print</div>
+      <div>17 x 11 in.</div>
+      <div>43.2 x 27.9 cm</div>
+      <div>Edition of 10</div>
+      <div>SCHPE011</div>
+    </div>
+
+    <img className="mb-2" src={schlesingerWorkF} />
+    <div className="mb-4">
+      <div>Peter Schlesinger</div>
+      <div>Snack shop, Saint Tropez, 1974</div>
+      <div>Archival Pigment Print</div>
+      <div>17 x 11 in.</div>
+      <div>43.2 x 27.9 cm</div>
+      <div>Edition of 10</div>
+      <div>SCHPE003</div>
+    </div>
+
+    <img className="mb-2" src={schlesingerWorkG} />
+    <div className="mb-4">
+      <div>Peter Schlesinger</div>
+      <div>Dom Hamilton, daughter of pop artist Richard, Villefranche-sur-Mer, France, 1971</div>
+      <div>Archival Pigment Print</div>
+      <div>17 x 11 in.</div>
+      <div>43.2 x 27.9 cm</div>
+      <div>Edition of 10</div>
+      <div>SCHPE012</div>
+    </div>
+
+    <img className="mb-2" src={schlesingerWorkH} />
+    <div className="mb-4">
+      <div>Peter Schlesinger</div>
+      <div>Sunbathers at La Piscine Deligny, 1975</div>
+      <div>Archival Pigment Print</div>
+      <div>11 x 17 in.</div>
+      <div>27.9 x 43.2 cm</div>
+      <div>Edition of 10</div>
+      <div>SCHPE004</div>
+    </div>
+
+    <img className="mb-2" src={schlesingerWorkI} />
+    <div className="mb-4">
+      <div>Peter Schlesinger</div>
+      <div>Eric Boman and Grace Coddington on Rue de Rivoli, Paris, 1972</div>
+      <div>Archival Pigment Print</div>
+      <div>17 x 11 in.</div>
+      <div>43.2 x 27.9 cm</div>
+      <div>Edition of 10</div>
+      <div>SCHPE014</div>
+    </div>
+
+    <img className="mb-2" src={schlesingerWorkJ} />
+    <div className="mb-4">
+      <div>Peter Schlesinger</div>
+      <div>Ossie Clark and an angry waiter in Paris, 1969</div>
+      <div>Archival Pigment Print</div>
+      <div>17 x 11 in.</div>
+      <div>43.2 x 27.9 cm</div>
+      <div>Edition of 10</div>
+      <div>SCHPE013</div>
+    </div>
+
+    <img className="mb-2" src={schlesingerWorkK} />
+    <div className="mb-4">
+      <div>Peter Schlesinger</div>
+      <div>Paloma Picasso and Tina Chow after Paloma’s wedding dinner, Paris, 1978</div>
+      <div>Archival Pigment Print</div>
+      <div>17 x 11 in.</div>
+      <div>43.2 x 27.9 cm</div>
+      <div>Edition of 10</div>
+      <div>SCHPE007</div>
+    </div>
+
+    <img className="mb-4" src={schlesingerInstallA} />
+    <img className="mb-4" src={schlesingerInstallB} />
+    <img className="mb-4" src={schlesingerInstallC} />
+    <img className="mb-4" src={schlesingerInstallD} />
+    <img className="mb-4" src={schlesingerInstallE} />
+    <img className="mb-4" src={schlesingerInstallF} />
+    <img className="mb-4" src={schlesingerInstallG} />
+    <img className="mb-4" src={schlesingerInstallH} />
+  </div>
+)
 
 const Schlesinger = () => {
   return (
@@ -27,8 +178,7 @@ const Schlesinger = () => {
 
             {/* MOBILE ONLY IMAGE */}
             <div className="md:hidden">
-              <img className="mb-2" src={pSchlesinger} alt="Peter Schlesinger Photograph" />
-              <div className="text-center mb-9">Tina Chow and Paloma Picasso reapplying their makeup during Paloma’s wedding at Karl Lagerfeld’s apartment (1978)</div>
+              <Images />
             </div>
 
             {/* PRESS */}
@@ -74,8 +224,7 @@ const Schlesinger = () => {
         {/* DESKTOP ONLY IMAGE */}
         <div className="hidden md:flex md:w-1/3 lg:w-1/2 max-w-395 flex-col h-full overflow-scroll">
           <div className="px-4 mt-16 mb-4">
-            <img className="mb-2 mx-auto" src={pSchlesinger} alt="Peter Schlesinger Photograph" />
-            <div className="text-center px-4">Tina Chow and Paloma Picasso reapplying their makeup during Paloma’s wedding at Karl Lagerfeld’s apartment (1978)</div>
+            <Images />
           </div>
         </div>
 

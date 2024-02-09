@@ -2,8 +2,142 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import burnell from "../images/burnell.jpg";
+import burnellWork1 from "../images/burnell/works/BURCA001.jpg";
+import burnellWork5 from "../images/burnell/works/BURCA005.jpg";
+import burnellWork6 from "../images/burnell/works/BURCA006.jpg";
+import burnellWork7 from "../images/burnell/works/BURCA007.jpg";
+import burnellWork9 from "../images/burnell/works/BURCA009.jpg";
+import burnellWork10 from "../images/burnell/works/BURCA010.jpg";
+import burnellWork11 from "../images/burnell/works/BURCA011.jpg";
+import burnellWork12 from "../images/burnell/works/BURCA012.jpg";
+import burnellWork13 from "../images/burnell/works/BURCA013.jpg";
+import burnellWork14 from "../images/burnell/works/BURCA014.jpg";
+import burnellInstallA from "../images/burnell/install/A.jpg";
+import burnellInstallB from "../images/burnell/install/B.jpg";
+import burnellInstallC from "../images/burnell/install/C.jpg";
+import burnellInstallD from "../images/burnell/install/D.jpg";
+import burnellInstallE from "../images/burnell/install/E.jpg";
+import burnellInstallF from "../images/burnell/install/F.jpg";
+import burnellInstallG from "../images/burnell/install/G.jpg";
+import burnellInstallH from "../images/burnell/install/H.jpg";
+import burnellInstallI from "../images/burnell/install/I.jpg";
+
+
+
 import butterfly from "../images/butterfly.png";
+
+const Images = () => (
+  <div>
+    <img className="mb-2" src={burnellWork1} alt="BURCA001" />
+    <div className="mb-4">
+      <div>Carly Burnell</div>
+      <div>Untitled, 2023</div>
+      <div>Resin, wax, silicone, oil</div>
+      <div>16 x 20 in.</div>
+      <div>40.6 x 50.8 cm</div>
+      <div>BURCA001</div>
+    </div>
+
+    <img className="mb-2" src={burnellWork12} alt="BURCA012" />
+    <div className="mb-4">
+      <div>Carly Burnell</div>
+      <div>Untitled, 2023</div>
+      <div>Oil, resin, wax on linen</div>
+      <div>5 x 7.5 in.</div>
+      <div>12.7 x 17.8 cm</div>
+      <div>BURCA012</div>
+    </div>
+
+    <img className="mb-2" src={burnellWork7} />
+    <div className="mb-4">
+      <div>Carly Burnell</div>
+      <div>Untitled, 2019</div>
+      <div>oil, resin, wax, silicone on linen</div>
+      <div>14 x 12 in.</div>
+      <div>35.6 x 30.5 cm</div>
+      <div>BURCA007</div>
+    </div>
+
+    <img className="mb-2" src={burnellWork6} />
+    <div className="mb-4">
+      <div>Carly Burnell</div>
+      <div>Untitled, 2023</div>
+      <div>oil, resin, wax, silicone on linen</div>
+      <div>24 x 18 in.</div>
+      <div>61 x 45.7 cm</div>
+      <div>BURCA006</div>
+    </div>
+
+    <img className="mb-2" src={burnellWork9} />
+    <div className="mb-4">
+      <div>Carly Burnell</div>
+      <div>Untitled, 2023</div>
+      <div>oil, resin, wax, silicone on linen</div>
+      <div>15 x 17 in.</div>
+      <div>38.1 x 43.2 cm</div>
+      <div>BURCA009</div>
+    </div>
+
+    <img className="mb-2" src={burnellWork14} />
+    <div className="mb-4">
+      <div>Carly Burnell</div>
+      <div>Untitled, 2016</div>
+      <div>Oil on burlap</div>
+      <div>8 x 8 in</div>
+      <div>20.3 x 20.3 cm</div>
+      <div>BURCA014</div>
+    </div>
+
+    <img className="mb-2" src={burnellWork5} />
+    <div className="mb-4">
+      <div>Carly Burnell</div>
+      <div>Untitled, 2020</div>
+      <div>Oil, Resin, Wax on Linen</div>
+      <div>9 x 12 in.</div>
+      <div>22.9 x 30.5 cm</div>
+      <div>BURCA005</div>
+    </div>
+
+    <img className="mb-2" src={burnellWork11} />
+    <div className="mb-4">
+      <div>Carly Burnell</div>
+      <div>Untitled, 2023</div>
+      <div>Oil, resin on Linen</div>
+      <div>6 x 9 in.</div>
+      <div>15.2 x 22.9 cm</div>
+      <div>BURCA011</div>
+    </div>
+
+    <img className="mb-2" src={burnellWork10} />
+    <div className="mb-4">
+      <div>Carly Burnell</div>
+      <div>Untitled, 2022</div>
+      <div>Oil, wax, resin, silicone on linen</div>
+      <div>14 x 11 in.</div>
+      <div>35.6 x 27.9 cm</div>
+      <div>BURCA010</div>
+    </div>
+
+    <img className="mb-2" src={burnellWork13} />
+    <div className="mb-4">
+      <div>Carly Burnell</div>
+      <div>Untitled, 2019</div>
+      <div>Oil, wax, resin, silicone on linen</div>
+      <div>11 x 14 in.</div>
+      <div>27.9 x 35.6 cm</div>
+      <div>BURCA013</div>
+    </div>
+    <img className="mb-4" src={burnellInstallA} />
+    <img className="mb-4" src={burnellInstallB} />
+    <img className="mb-4" src={burnellInstallC} />
+    <img className="mb-4" src={burnellInstallD} />
+    <img className="mb-4" src={burnellInstallE} />
+    <img className="mb-4" src={burnellInstallF} />
+    <img className="mb-4" src={burnellInstallG} />
+    <img className="mb-4" src={burnellInstallH} />
+    <img className="mb-4" src={burnellInstallI} />
+  </div>
+)
 
 const Burnell = () => {
   return (
@@ -26,7 +160,7 @@ const Burnell = () => {
 
             {/* MOBILE ONLY IMAGE */}
             <div className="md:hidden mb-9">
-              <img className="mb-2" src={burnell} alt="Burnell Photograph" />
+              <Images />
             </div>
 
             {/* INFO */}
@@ -45,7 +179,7 @@ const Burnell = () => {
         {/* DESKTOP ONLY IMAGE */}
         <div className="hidden md:flex md:w-1/3 lg:w-1/2 max-w-395 flex-col h-full overflow-scroll">
           <div className="px-4 mt-16 mb-4">
-            <img className="mb-2 mx-auto" src={burnell} alt="Burnell Photograph" />
+            <Images />
           </div>
         </div>
 
