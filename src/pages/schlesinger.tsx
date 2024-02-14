@@ -51,7 +51,7 @@ const Schlesinger = () => {
     <Layout>
       <SEO title="Mariposa Gallery" description="Peter Schlesinger" />
       <div className="flex justify-around gap-6 lg:gap-10 md:h-screen">
-        <div className="w-64 md:max-w-543 md:w-1/2 lg:w-1/2 flex flex-col overflow-scroll">
+        <div className="w-72 sm:w-96 md:max-w-543 md:w-1/2 lg:w-1/2 flex flex-col overflow-scroll">
           <div className="md:px-4 md:mt-14 ">
 
             {/* TITLE AND DATES */}
