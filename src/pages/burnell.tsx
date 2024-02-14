@@ -21,6 +21,7 @@ import burnellInstallF from "../images/burnell/install/F.jpg";
 import burnellInstallG from "../images/burnell/install/G.jpg";
 import burnellInstallH from "../images/burnell/install/H.jpg";
 import burnellInstallI from "../images/burnell/install/I.jpg";
+import headerImage from "../images/burnell/FINAL.jpg";
 
 
 
@@ -28,114 +29,25 @@ import butterfly from "../images/butterfly.png";
 
 const Images = () => (
   <div>
-    <img className="mb-2" src={burnellWork1} alt="BURCA001" />
-    <div className="mb-4">
-      <div>Carly Burnell</div>
-      <div>Untitled, 2023</div>
-      <div>Resin, wax, silicone, oil</div>
-      <div>16 x 20 in.</div>
-      <div>40.6 x 50.8 cm</div>
-      <div>BURCA001</div>
-    </div>
-
-    <img className="mb-2" src={burnellWork12} alt="BURCA012" />
-    <div className="mb-4">
-      <div>Carly Burnell</div>
-      <div>Untitled, 2023</div>
-      <div>Oil, resin, wax on linen</div>
-      <div>5 x 7.5 in.</div>
-      <div>12.7 x 17.8 cm</div>
-      <div>BURCA012</div>
-    </div>
-
-    <img className="mb-2" src={burnellWork7} />
-    <div className="mb-4">
-      <div>Carly Burnell</div>
-      <div>Untitled, 2019</div>
-      <div>oil, resin, wax, silicone on linen</div>
-      <div>14 x 12 in.</div>
-      <div>35.6 x 30.5 cm</div>
-      <div>BURCA007</div>
-    </div>
-
-    <img className="mb-2" src={burnellWork6} />
-    <div className="mb-4">
-      <div>Carly Burnell</div>
-      <div>Untitled, 2023</div>
-      <div>oil, resin, wax, silicone on linen</div>
-      <div>24 x 18 in.</div>
-      <div>61 x 45.7 cm</div>
-      <div>BURCA006</div>
-    </div>
-
-    <img className="mb-2" src={burnellWork9} />
-    <div className="mb-4">
-      <div>Carly Burnell</div>
-      <div>Untitled, 2023</div>
-      <div>oil, resin, wax, silicone on linen</div>
-      <div>15 x 17 in.</div>
-      <div>38.1 x 43.2 cm</div>
-      <div>BURCA009</div>
-    </div>
-
-    <img className="mb-2" src={burnellWork14} />
-    <div className="mb-4">
-      <div>Carly Burnell</div>
-      <div>Untitled, 2016</div>
-      <div>Oil on burlap</div>
-      <div>8 x 8 in</div>
-      <div>20.3 x 20.3 cm</div>
-      <div>BURCA014</div>
-    </div>
-
-    <img className="mb-2" src={burnellWork5} />
-    <div className="mb-4">
-      <div>Carly Burnell</div>
-      <div>Untitled, 2020</div>
-      <div>Oil, Resin, Wax on Linen</div>
-      <div>9 x 12 in.</div>
-      <div>22.9 x 30.5 cm</div>
-      <div>BURCA005</div>
-    </div>
-
-    <img className="mb-2" src={burnellWork11} />
-    <div className="mb-4">
-      <div>Carly Burnell</div>
-      <div>Untitled, 2023</div>
-      <div>Oil, resin on Linen</div>
-      <div>6 x 9 in.</div>
-      <div>15.2 x 22.9 cm</div>
-      <div>BURCA011</div>
-    </div>
-
-    <img className="mb-2" src={burnellWork10} />
-    <div className="mb-4">
-      <div>Carly Burnell</div>
-      <div>Untitled, 2022</div>
-      <div>Oil, wax, resin, silicone on linen</div>
-      <div>14 x 11 in.</div>
-      <div>35.6 x 27.9 cm</div>
-      <div>BURCA010</div>
-    </div>
-
     <img className="mb-2" src={burnellWork13} />
-    <div className="mb-4">
-      <div>Carly Burnell</div>
-      <div>Untitled, 2019</div>
-      <div>Oil, wax, resin, silicone on linen</div>
-      <div>11 x 14 in.</div>
-      <div>27.9 x 35.6 cm</div>
-      <div>BURCA013</div>
-    </div>
-    <img className="mb-4" src={burnellInstallA} />
-    <img className="mb-4" src={burnellInstallB} />
-    <img className="mb-4" src={burnellInstallC} />
-    <img className="mb-4" src={burnellInstallD} />
-    <img className="mb-4" src={burnellInstallE} />
-    <img className="mb-4" src={burnellInstallF} />
-    <img className="mb-4" src={burnellInstallG} />
-    <img className="mb-4" src={burnellInstallH} />
     <img className="mb-4" src={burnellInstallI} />
+    <img className="mb-4" src={burnellInstallH} />
+    <img className="mb-2" src={burnellWork10} />
+    <img className="mb-4" src={burnellInstallG} />
+    <img className="mb-2" src={burnellWork11} />
+    <img className="mb-4" src={burnellInstallF} />
+    <img className="mb-2" src={burnellWork14} />
+    <img className="mb-4" src={burnellInstallE} />
+    <img className="mb-2" src={burnellWork5} />
+    <img className="mb-4" src={burnellInstallD} />
+    <img className="mb-2" src={burnellWork9} />
+    <img className="mb-4" src={burnellInstallC} />
+    <img className="mb-2" src={burnellWork6} />
+    <img className="mb-2" src={burnellWork7} />
+    <img className="mb-4" src={burnellInstallB} />
+    <img className="mb-2" src={burnellWork12} />
+    <img className="mb-2" src={burnellWork1} />
+    <img className="mb-4" src={burnellInstallA} />
   </div>
 )
 
@@ -158,21 +70,28 @@ const Burnell = () => {
               </div>
             </div>
 
-            {/* MOBILE ONLY IMAGE */}
+            {/* MOBILE ONLY HEADER IMAGE */}
             <div className="md:hidden mb-9">
-              <Images />
+              <img className="mb-4" src={headerImage} />
             </div>
 
             {/* INFO */}
-            <div className="mb-4.5 flex gap-0.5	align-center">
-              <img width={'15px'} src={butterfly} />INFORMATION<img width={'15px'} src={butterfly} />
+            <div>
+              <div className="mb-4.5 flex gap-0.5	align-center">
+                <img width={'15px'} src={butterfly} />INFORMATION<img width={'15px'} src={butterfly} />
+              </div>
+              <div className="mb-4">"The main aspects of art are invisible; the basic nature of art is invisible. The essence of visual art is not seen. The unseen nature of art, and the development of its aspects, reduces thought to all sorts of speculation. The discussion of science is scientific; the discussion of art is superstitious. There is no history. </div>
+              <div className="mb-4">What are its dimensions? Is it on a flat plane? Do the mediums recline on the surface or are they perched upon it? Is each medium itself evenly balanced? If the surface is not level, does the tilted plane give rise to a secondary stratum of materials? Is the painting itself symmetrical? If not, does it face outwards or inwards relative to the tilted plane? Does the paint spread from a focal point at the centre towards the peripheral edges? Ostensibly, the contours and drama crescendo at the periphery, however I hesitate to fully commit to this observation. How would I describe the shape of the outermost layer of this mountain-like form - is it pointed, rounded, or flat? Very well - this rigid, rock-shaped silicone and resin alchemical invention is a dense stroke running parallel to the surface plane. And then as I move to the side, it evaporates. In what manner is it seemingly disappearing? More broadly, how do the materials establish this ‘spatial’ environment encompassing the sculpture-painting? When two surfaces proximate, they delineate an area between; separated far enough, the area ceases to be an area. Only a void persists."</div>
+              <div className="mb-4">
+                <span className="font-glaston"> — After Judd, Schiller, and Derrida</span>
+              </div>
+              <div className="mb-4">Carly Burnell (b. 1991, Santa Barbara, California) lives and works in New York. She completed her BFA in Fine Arts at Parsons The New School of Design in 2015 and received her MFA from New York University in 2017. Selected solo and two person exhibitions include changeling, Spencer Brownstone Gallery, New York (2022); latent impressions, Spencer Brownstone Gallery, New York (2019); You Have My Eyes, CFCP, Brooklyn (2016); November, 80WSE Project Space, New York (2016). Burnell was featured on David Zwirner’s Platform in 2021, and her work has been included in several group exhibitions in New York, Los Angeles, Miami, and Nashville. Burnell is also a writer and performs with Stanley Love Performance Group.</div>
             </div>
-            <div className="mb-4">"The main aspects of art are invisible; the basic nature of art is invisible. The essence of visual art is not seen. The unseen nature of art, and the development of its aspects, reduces thought to all sorts of speculation. The discussion of science is scientific; the discussion of art is superstitious. There is no history. </div>
-            <div className="mb-4">What are its dimensions? Is it on a flat plane? Do the mediums recline on the surface or are they perched upon it? Is each medium itself evenly balanced? If the surface is not level, does the tilted plane give rise to a secondary stratum of materials? Is the painting itself symmetrical? If not, does it face outwards or inwards relative to the tilted plane? Does the paint spread from a focal point at the centre towards the peripheral edges? Ostensibly, the contours and drama crescendo at the periphery, however I hesitate to fully commit to this observation. How would I describe the shape of the outermost layer of this mountain-like form - is it pointed, rounded, or flat? Very well - this rigid, rock-shaped silicone and resin alchemical invention is a dense stroke running parallel to the surface plane. And then as I move to the side, it evaporates. In what manner is it seemingly disappearing? More broadly, how do the materials establish this ‘spatial’ environment encompassing the sculpture-painting? When two surfaces proximate, they delineate an area between; separated far enough, the area ceases to be an area. Only a void persists."</div>
-            <div className="mb-4">
-              <span className="font-glaston"> — After Judd, Schiller, and Derrida</span>
-            </div>
-            <div className="mb-4">Carly Burnell (b. 1991, Santa Barbara, California) lives and works in New York. She completed her BFA in Fine Arts at Parsons The New School of Design in 2015 and received her MFA from New York University in 2017. Selected solo and two person exhibitions include changeling, Spencer Brownstone Gallery, New York (2022); latent impressions, Spencer Brownstone Gallery, New York (2019); You Have My Eyes, CFCP, Brooklyn (2016); November, 80WSE Project Space, New York (2016). Burnell was featured on David Zwirner’s Platform in 2021, and her work has been included in several group exhibitions in New York, Los Angeles, Miami, and Nashville. Burnell is also a writer and performs with Stanley Love Performance Group.</div>
+          </div>
+
+          {/* MOBILE ONLY IMAGES */}
+          <div className="md:hidden mb-9">
+            <Images />
           </div>
         </div>
 
