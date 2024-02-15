@@ -29,25 +29,25 @@ import butterfly from "../images/butterfly.png";
 
 const Images = () => (
   <div>
-    <img className="mb-2" src={burnellWork13} />
-    <img className="mb-4" src={burnellInstallI} />
-    <img className="mb-4" src={burnellInstallH} />
-    <img className="mb-2" src={burnellWork10} />
-    <img className="mb-4" src={burnellInstallG} />
-    <img className="mb-2" src={burnellWork11} />
-    <img className="mb-4" src={burnellInstallF} />
-    <img className="mb-2" src={burnellWork14} />
-    <img className="mb-4" src={burnellInstallE} />
-    <img className="mb-2" src={burnellWork5} />
-    <img className="mb-4" src={burnellInstallD} />
-    <img className="mb-2" src={burnellWork9} />
-    <img className="mb-4" src={burnellInstallC} />
-    <img className="mb-2" src={burnellWork6} />
-    <img className="mb-2" src={burnellWork7} />
-    <img className="mb-4" src={burnellInstallB} />
-    <img className="mb-2" src={burnellWork12} />
-    <img className="mb-2" src={burnellWork1} />
     <img className="mb-4" src={burnellInstallA} />
+    <img className="mb-2" src={burnellWork1} />
+    <img className="mb-2" src={burnellWork12} />
+    <img className="mb-4" src={burnellInstallB} />
+    <img className="mb-2" src={burnellWork7} />
+    <img className="mb-2" src={burnellWork6} />
+    <img className="mb-4" src={burnellInstallC} />
+    <img className="mb-2" src={burnellWork9} />
+    <img className="mb-4" src={burnellInstallD} />
+    <img className="mb-2" src={burnellWork5} />
+    <img className="mb-4" src={burnellInstallE} />
+    <img className="mb-2" src={burnellWork14} />
+    <img className="mb-4" src={burnellInstallF} />
+    <img className="mb-2" src={burnellWork11} />
+    <img className="mb-4" src={burnellInstallG} />
+    <img className="mb-2" src={burnellWork10} />
+    <img className="mb-4" src={burnellInstallH} />
+    <img className="mb-4" src={burnellInstallI} />
+    <img className="mb-2" src={burnellWork13} />
   </div>
 )
 

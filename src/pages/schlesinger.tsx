@@ -26,23 +26,23 @@ import schlesingerWorkK from "../images/schlesinger/works/K.jpg";
 
 const Images = () => (
   <div>
-    <img className="mb-2" src={schlesingerWorkK} />
-    <img className="mb-4" src={schlesingerInstallH} />
-    <img className="mb-2" src={schlesingerWorkJ} />
-    <img className="mb-2" src={schlesingerWorkI} />
-    <img className="mb-4" src={schlesingerInstallG} />
-    <img className="mb-2" src={schlesingerWorkH} />
-    <img className="mb-4" src={schlesingerInstallE} />
-    <img className="mb-2" src={schlesingerWorkG} />
-    <img className="mb-2" src={schlesingerWorkF} />
-    <img className="mb-2" src={schlesingerWorkE} />
-    <img className="mb-4" src={schlesingerInstallD} />
-    <img className="mb-2" src={schlesingerWorkD} />
-    <img className="mb-4" src={schlesingerInstallC} />
-    <img className="mb-2" src={schlesingerWorkC} />
-    <img className="mb-2" src={schlesingerWorkB} />
-    <img className="mb-2" src={schlesingerWorkA} />
     <img className="mb-4" src={schlesingerInstallA} />
+    <img className="mb-2" src={schlesingerWorkA} />
+    <img className="mb-2" src={schlesingerWorkB} />
+    <img className="mb-2" src={schlesingerWorkC} />
+    <img className="mb-4" src={schlesingerInstallC} />
+    <img className="mb-2" src={schlesingerWorkD} />
+    <img className="mb-4" src={schlesingerInstallD} />
+    <img className="mb-2" src={schlesingerWorkE} />
+    <img className="mb-2" src={schlesingerWorkF} />
+    <img className="mb-2" src={schlesingerWorkG} />
+    <img className="mb-4" src={schlesingerInstallE} />
+    <img className="mb-2" src={schlesingerWorkH} />
+    <img className="mb-4" src={schlesingerInstallG} />
+    <img className="mb-2" src={schlesingerWorkI} />
+    <img className="mb-2" src={schlesingerWorkJ} />
+    <img className="mb-4" src={schlesingerInstallH} />
+    <img className="mb-2" src={schlesingerWorkK} />
   </div>
 )
 
