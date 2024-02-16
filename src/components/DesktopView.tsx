@@ -1,7 +1,7 @@
 import React from "react"
 import Nav from "./nav";
 import { Link } from "gatsby";
-import Logo from "./Logo";
+import Logo from "./logo";
 import { Container, Section, Bar } from '@column-resizer/react';
 
 const DesktopView = ({ renderTextCol, renderImageCol }) => {

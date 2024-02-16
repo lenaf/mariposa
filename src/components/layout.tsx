@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import Logo from "./Logo"
+import Logo from "./logo"
 import { CiMenuBurger } from "react-icons/ci";
 import { VscChromeClose } from "react-icons/vsc";
 import Nav from "./nav";
