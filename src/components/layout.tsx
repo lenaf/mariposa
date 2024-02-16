@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import Logo from "./logo"
+import Logo from "./Logo"
 import { CiMenuBurger } from "react-icons/ci";
 import { VscChromeClose } from "react-icons/vsc";
-import Nav from "./nav";
+import Nav from "./Nav";
 
 const Layout = ({ children, }) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
