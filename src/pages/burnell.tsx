@@ -4,9 +4,9 @@ import SEO from "../components/seo"
 import headerImage from "../images/burnell/FINAL.jpg";
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 import DesktopView from "../components/DesktopView";
-import BurnellImages from "../components/burnell/Images";
+import BurnellImages from "../components/Burnell/Images";
 import BurnellTitleAndDates from "../components/Burnell/TitleAndDates";
-import BurnellInfo from "../components/burnell/Info";
+import BurnellInfo from "../components/Burnell/Info";
 import MobileView from "../components/MobileView";
 
 
