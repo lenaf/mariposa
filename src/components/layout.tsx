@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Logo from "./Logo"
 import { CiMenuBurger } from "react-icons/ci";
 import { VscChromeClose } from "react-icons/vsc";
-import Nav from "./Nav";
+import Nav from "./nav";
 
 const Layout = ({ children, }) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);

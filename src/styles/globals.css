@@ -38,3 +38,12 @@ h3 {
   font-named-instance: 'Regular';
   src: url(/fonts/MinionPro-Regular.otf);
 }
+
+.divider {
+  background-color: transparent;
+  cursor: col-resize
+}
+
+.divider:hover {
+  background-color: #F4F4F4;
+}

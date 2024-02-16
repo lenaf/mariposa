@@ -1,5 +1,5 @@
 import React from "react"
-import Nav from "./Nav";
+import Nav from "./nav";
 import { Link } from "gatsby";
 import Logo from "./Logo";
 import { Container, Section, Bar } from '@column-resizer/react';
@@ -8,7 +8,10 @@ const DesktopView = ({ renderTextCol, renderImageCol }) => {
   return (
     <Container className="h-screen">
 
-      <Section className="flex flex-col pt-10.5 pb-9 pl-9.5 pr-4" minSize={50} >
+      <Section
+        defaultSize={300}
+        minSize={50}
+        className="flex flex-col pt-10.5 pb-9 pl-9.5 pr-4"  >
         <nav>
           <Link className="shrink flex mb-6" to={`/`}>
             <h1><Logo className="flex justify-start" /></h1>
@@ -20,15 +23,21 @@ const DesktopView = ({ renderTextCol, renderImageCol }) => {
         </div>
       </Section>
 
-      <Bar size={10} style={{ background: 'transparent', cursor: 'col-resize' }} />
+      <Bar size={10} className='divider' />
 
-      <Section className="!overflow-scroll pt-14 pb-9 px-4">
+      <Section
+        defaultSize={500}
+        minSize={50}
+        className="!overflow-scroll pt-14 pb-9 px-4">
         {renderTextCol()}
       </Section>
 
-      <Bar size={10} style={{ background: 'transparent', cursor: 'col-resize' }} />
+      <Bar size={10} className='divider' />
 
-      <Section className="!overflow-scroll pt-14 pb-9 pr-9.5 pl-4">
+      <Section
+        defaultSize={500}
+        minSize={50}
+        className="!overflow-scroll pt-14 pb-9 pr-9.5 pl-4">
         {renderImageCol()}
       </Section>
 
