@@ -1,7 +1,6 @@
 import React from "react"
 
 import SEO from "../components/seo"
-import headerImage from "../images/schlesinger/works/C.jpg";
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 import DesktopView from "../components/DesktopView";
 import SchlesingerImages from "../components/Schlesinger/Images";
@@ -9,6 +8,7 @@ import SchlesingerTitleAndDates from "../components/Schlesinger/TitleAndDates";
 import SchlesingerInfo from "../components/Schlesinger/Info";
 import MobileView from "../components/MobileView";
 import SchlesingerPress from "../components/Schlesinger/Press";
+import { StaticImage } from "gatsby-plugin-image";
 
 
 const Schlesinger = () => {
@@ -32,7 +32,7 @@ const Schlesinger = () => {
         <MobileView >
           <SchlesingerTitleAndDates />
           <div className="mb-9">
-            <img className="mb-2" src={headerImage} />
+            <StaticImage className="mb-2" src={'../images/schlesinger/works/C.jpg'} alt='Peter Schlesigner Art' />
           </div>
           <SchlesingerPress />
           <SchlesingerInfo />

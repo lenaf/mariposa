@@ -1,13 +1,13 @@
 import React from "react"
 
 import SEO from "../components/seo"
-import headerImage from "../images/burnell/FINAL.jpg";
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 import DesktopView from "../components/DesktopView";
 import BurnellImages from "../components/Burnell/Images";
 import BurnellTitleAndDates from "../components/Burnell/TitleAndDates";
 import BurnellInfo from "../components/Burnell/Info";
 import MobileView from "../components/MobileView";
+import { StaticImage } from "gatsby-plugin-image";
 
 
 const Burnell = () => {
@@ -30,7 +30,7 @@ const Burnell = () => {
         <MobileView >
           <BurnellTitleAndDates />
           <div className="mb-9">
-            <img className="mb-2" src={headerImage} />
+            <StaticImage className="mb-2" src={'../images/burnell/FINAL.jpg'} alt='Carly  Burnell Art' />
           </div>
           <BurnellInfo />
           <BurnellImages />
