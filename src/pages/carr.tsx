@@ -30,7 +30,7 @@ const Carr = () => {
         <MobileView >
           <CarrTitleAndDates />
           <div className="mb-9">
-            <StaticImage className="mb-2" src={'../images/Carr/carr.jpg'} alt='Drake Carr Showcard' />
+            <StaticImage className="mb-2" src={'../images/carr/carr.jpg'} alt='Drake Carr Showcard' />
             <label>Les Walk-ins showcard by <a href="https://patrikas.pro/">John Paul Patrikas</a></label>
           </div>
           <CarrInfo />
