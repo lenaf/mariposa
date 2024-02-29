@@ -1,11 +1,11 @@
 import React from "react"
 
-import Burnell from "./burnell";
+import Carr from "./carr";
 
 
 const IndexPage = () => {
   return (
-    <Burnell />)
+    <Carr />)
 }
 
 export default IndexPage
