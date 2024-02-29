@@ -18,15 +18,15 @@ const Nav = () => {
             </Link>
             <Link
                 className={`ml-2 mb-2`}
-                to={`/schlesinger`}
-            >
-                Peter Schlesinger: France 1969 - 1979
-            </Link>
-            <Link
-                className={`ml-2 `}
                 to={`/burnell`}
             >
                 Carly Burnell: où il n’y a rien / where there is nothing
+            </Link>
+            <Link
+                className={`ml-2`}
+                to={`/schlesinger`}
+            >
+                Peter Schlesinger: France 1969 - 1979
             </Link>
         </div>
     )
