@@ -15,7 +15,7 @@ const SchlesingerPress = () => (
     </div>
     <div className="mb-4">
       <a target="_blank" href="https://www.harpersbazaar.fr/culture/rencontre-avec-lartiste-et-icone-peter-schlesinger_1267">
-        Rencontre avec l'Artiste et Icône Peter Schlesinger, Harper Bazaar
+        Rencontre avec l'Artiste et Icône Peter Schlesinger, Harper's Bazaar
       </a>
     </div>
     <div className="mb-8">

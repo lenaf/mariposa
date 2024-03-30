@@ -5,25 +5,32 @@ import { useLocation } from '@reach/router';
 const Nav = () => {
     const { pathname } = useLocation();
     return (
-        <div className="flex flex-col text-start justify-start gap-x-4.5 leading-5 font-thin	">
+        <div className="flex flex-col text-start justify-start gap-x-4.5 leading-5 font-thin">
             <Link
                 to={`/about`}
+                className={`mb-2 ${pathname === '/about' ? 'font-black italic' : ''}`}
             >
                 About
             </Link>
             <Link
-                to={`/schlesinger`}
+                to={`/carr`}
             >
                 Past
             </Link>
             <Link
-                className={`ml-2 mb-2`}
+                className={`ml-2 mb-2 ${pathname === '/carr' ? 'font-black italic' : ''}`}
+                to={`/carr`}
+            >
+                Drake Carr: Les Walk-ins
+            </Link>
+            <Link
+                className={`ml-2 mb-2 ${pathname === '/burnell' ? 'font-black italic' : ''}`}
                 to={`/burnell`}
             >
                 Carly Burnell: où il n’y a rien / where there is nothing
             </Link>
             <Link
-                className={`ml-2`}
+                className={`ml-2 ${pathname === '/schlesinger' ? 'font-black italic' : ''}`}
                 to={`/schlesinger`}
             >
                 Peter Schlesinger: France 1969 - 1979

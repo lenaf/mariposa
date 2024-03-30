@@ -1,11 +1,11 @@
 import React from "react"
 
-import Carr from "./carr";
+import Culprit from "./culprit";
 
 
 const IndexPage = () => {
   return (
-    <Carr />)
+    <Culprit />)
 }
 
 export default IndexPage

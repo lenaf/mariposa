@@ -8,6 +8,7 @@ import CarrTitleAndDates from "../components/Carr/TitleAndDates";
 import CarrInfo from "../components/Carr/Info";
 import MobileView from "../components/MobileView";
 import { StaticImage } from "gatsby-plugin-image";
+import CarrPress from "../components/Carr/Press";
 
 
 const Carr = () => {
@@ -20,11 +21,15 @@ const Carr = () => {
           renderTextCol={() =>
             <div>
               <CarrTitleAndDates />
+              <CarrPress />
               <CarrInfo />
             </div>
           }
           renderImageCol={() =>
-            <CarrImages />
+            <div>
+              <CarrImages />
+              <StaticImage className="mb-2" src={'../images/carr/carr.jpg'} alt='Drake Carr Showcard' />
+            </div>
           }
         /> :
         <MobileView >
@@ -33,7 +38,9 @@ const Carr = () => {
             <StaticImage className="mb-2" src={'../images/carr/carr.jpg'} alt='Drake Carr Showcard' />
             <label>Les Walk-ins showcard by <a href="https://patrikas.pro/">John Paul Patrikas</a></label>
           </div>
+          <CarrPress />
           <CarrInfo />
+          <CarrImages />
         </MobileView>
       }
     </div >)
