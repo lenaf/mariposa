@@ -30,9 +30,10 @@ const Culprit = () => {
         <MobileView >
           <CulpritTitleAndDates />
           <div className="mb-9">
-            <StaticImage className="mb-2" src={'../images/culprit/header.png'} alt='Chelsea Culprit Showcard' />
+            <StaticImage className="mb-2" src={'../images/culprit/mobileLead.jpg'} alt='Chelsea Culprit Showcard' />
           </div>
           <CulpritInfo />
+          <CulpritImages />
         </MobileView>
       }
     </div >)
