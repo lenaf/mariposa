@@ -13,9 +13,15 @@ const Nav = () => {
                 About
             </Link>
             <Link
-                to={`/carr`}
+                to={`/culprit`}
             >
                 Past
+            </Link>
+            <Link
+                className={`ml-2 mb-2 ${pathname === '/culprit' ? 'font-black' : ''}`}
+                to={`/culprit`}
+            >
+                Chelsea Culprit: PSYCHOPOMP
             </Link>
             <Link
                 className={`ml-2 mb-2 ${pathname === '/carr' ? 'font-black' : ''}`}

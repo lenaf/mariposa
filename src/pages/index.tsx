@@ -1,11 +1,11 @@
 import React from "react"
 
-import Culprit from "./culprit";
+import Basel from "./basel";
 
 
 const IndexPage = () => {
   return (
-    <Culprit />)
+    <Basel />)
 }
 
 export default IndexPage
