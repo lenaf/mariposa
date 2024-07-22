@@ -30,7 +30,10 @@ const Basel = () => {
         <MobileView >
           <BaselTitleAndDates />
           <div className="mb-9">
-            <StaticImage className="mb-2" src={'../images/basel/hero.jpg'} alt='Basel Social Club' />
+            <StaticImage
+              placeholder="blurred"
+              aspectRatio={.66}
+              className="mb-2" src={'../images/basel/hero.jpg'} alt='Basel Social Club' />
           </div>
           <BaselInfo />
           <BaselImages />
