@@ -33,10 +33,10 @@ const Green = () => {
             <StaticImage
               placeholder="blurred"
               aspectRatio={.66}
-              className="mb-2" src={'../images/Green/hero.jpg'} alt='Green Social Club' />
+              className="mb-2" src={'../images/green/green.jpg'} alt='Green' />
           </div>
           <GreenInfo />
-          <GreenImages />
+          {/* <GreenImages /> */}
         </MobileView>
       }
     </div >)
