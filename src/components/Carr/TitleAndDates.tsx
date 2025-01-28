@@ -10,6 +10,7 @@ const CarrTitleAndDates = () => {
         <span className="font-glaston">March </span>
         <span>23, 2024</span>
       </div>
+      <div>50 Rue de Turenne, Paris</div>
     </div>
   )
 }

@@ -8,6 +8,7 @@ const CulpritTitleAndDates = () => {
         <span className="font-glaston">April </span>
         <span>5, 2024</span>
       </div>
+      <div>50 Rue de Turenne, Paris</div>
     </div>
   )
 }

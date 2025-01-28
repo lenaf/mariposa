@@ -9,7 +9,7 @@ const GreenTitleAndDates = () => {
         <span className="font-glaston">February </span>
         <span>14, 2025 - </span>
         <span className="font-glaston">February </span>
-        <span>24, 2025</span>
+        <span>23, 2025</span>
       </div>
       <div>526 N Western Ave, Los Angeles, California</div>
     </div>

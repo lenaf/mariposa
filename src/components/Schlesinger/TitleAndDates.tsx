@@ -10,6 +10,7 @@ const SchlesingerTitleAndDates = () => {
         <span className="font-glaston">November </span>
         <span>25, 2023</span>
       </div>
+      <div>50 Rue de Turenne, Paris</div>
     </div>
   )
 }

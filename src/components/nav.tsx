@@ -21,13 +21,13 @@ const Nav = () => {
                 className={`ml-2 mb-2 ${pathname === '/berlin' ? 'font-black' : ''}`}
                 to={`/berlin`}
             >
-                Berlin
+                Peter Berlin: Permission to Stare
             </Link>
             <Link
                 className={`ml-2 mb-2 ${pathname === '/green' ? 'font-black' : ''}`}
                 to={`/green`}
             >
-                Green
+                Ethan James Green: Bombshell
             </Link>
             <Link
                 className={`ml-2 mb-2 ${pathname === '/basel' ? 'font-black' : ''}`}
