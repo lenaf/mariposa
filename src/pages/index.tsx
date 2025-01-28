@@ -1,11 +1,11 @@
 import React from "react"
 
-import Basel from "./basel";
+import Berlin from "./berlin";
 
 
 const IndexPage = () => {
   return (
-    <Basel />)
+    <Berlin />)
 }
 
 export default IndexPage

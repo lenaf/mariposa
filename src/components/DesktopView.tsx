@@ -18,9 +18,6 @@ const DesktopView = ({ renderTextCol, renderImageCol }) => {
           </Link>
           <Nav />
         </nav>
-        <div className={`text-base font-glaston text-center mt-auto`}>
-          50 Rue de Turenne, Paris 3
-        </div>
       </Section>
 
       <Bar size={10} className='divider' />

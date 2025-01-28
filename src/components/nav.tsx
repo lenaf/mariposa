@@ -13,9 +13,27 @@ const Nav = () => {
                 About
             </Link>
             <Link
-                to={`/culprit`}
+                to={`/green`}
             >
-                Past
+                Exhibitions
+            </Link>
+            <Link
+                className={`ml-2 mb-2 ${pathname === '/berlin' ? 'font-black' : ''}`}
+                to={`/berlin`}
+            >
+                Berlin
+            </Link>
+            <Link
+                className={`ml-2 mb-2 ${pathname === '/green' ? 'font-black' : ''}`}
+                to={`/green`}
+            >
+                Green
+            </Link>
+            <Link
+                className={`ml-2 mb-2 ${pathname === '/basel' ? 'font-black' : ''}`}
+                to={`/basel`}
+            >
+                Basel Social Club 2024
             </Link>
             <Link
                 className={`ml-2 mb-2 ${pathname === '/culprit' ? 'font-black' : ''}`}

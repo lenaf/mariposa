@@ -24,12 +24,7 @@ const About = (props: PageProps) => {
             backgroundRepeat: 'no-repeat'
           }}
         >
-          <div className="font-glaston text-base leading-5">50 Rue de Turenne</div>
-          <div className="font-glaston text-base leading-5 mb-7">Paris 3</div>
-          <div>Mercredi - Samedi </div>
-          <div>12:00 – 19:00 </div>
-          <div className="mb-4">or by appointment </div>
-          <a href="tel:+33 (0)7 66 53 42 68" className="mb-4">+33 (0)7 66 53 42 68</a>
+          <a href="tel:+1 805 252 9613" className="mb-4">+1 805 252 9613</a>
           <a href="mailto: info@mariposa.gallery">info@mariposa.gallery</a>
           <Link to='https://www.instagram.com/mariposa.drive/'> @mariposa.drive  </Link>
         </div>

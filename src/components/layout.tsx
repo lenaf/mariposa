@@ -21,9 +21,6 @@ const Layout = ({ children, }) => {
             </Link>
           </div>
           <div className="hidden md:block"><Nav /></div>
-          <div className={`hidden md:block text-base font-glaston text-center mt-auto`}>
-            50 Rue de Turenne, Paris 3
-          </div>
 
           {/* mobile nav */}
           <div
