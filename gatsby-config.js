@@ -4,9 +4,6 @@ module.exports = {
     description: `Paris, France`,
     author: `Alec`,
   },
-  flags: {
-    THE_FLAG: false
-  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
