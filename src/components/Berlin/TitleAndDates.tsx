@@ -10,6 +10,7 @@ const BerlinTitleAndDates = () => {
         <span className="font-glaston">February </span>
         <span>23, 2025</span>
       </div>
+      <div>Reception: <span className="font-glaston">February </span> 18, 6-8pm </div>
       <div>526 N Western Ave, Los Angeles, California</div>
     </div>
   )
