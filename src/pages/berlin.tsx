@@ -8,6 +8,7 @@ import BerlinTitleAndDates from "../components/Berlin/TitleAndDates";
 import BerlinInfo from "../components/Berlin/Info";
 import MobileView from "../components/MobileView";
 import { StaticImage } from "gatsby-plugin-image";
+import BerlinPress from "../components/Berlin/Press";
 
 
 const Berlin = () => {
@@ -20,6 +21,7 @@ const Berlin = () => {
           renderTextCol={() =>
             <div>
               <BerlinTitleAndDates />
+              <BerlinPress />
               <BerlinInfo />
             </div>
           }
@@ -35,8 +37,9 @@ const Berlin = () => {
               aspectRatio={.66}
               className="mb-2" src={'../images/berlin/berlin.jpg'} alt='Berlin' />
           </div>
+          <BerlinPress />
           <BerlinInfo />
-          {/* <BerlinImages /> */}
+          <BerlinImages />
         </MobileView>
       }
     </div >)

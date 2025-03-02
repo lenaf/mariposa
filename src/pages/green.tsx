@@ -8,6 +8,7 @@ import GreenTitleAndDates from "../components/Green/TitleAndDates";
 import GreenInfo from "../components/Green/Info";
 import MobileView from "../components/MobileView";
 import { StaticImage } from "gatsby-plugin-image";
+import GreenPress from "../components/Green/Press";
 
 
 const Green = () => {
@@ -20,6 +21,7 @@ const Green = () => {
           renderTextCol={() =>
             <div>
               <GreenTitleAndDates />
+              <GreenPress />
               <GreenInfo />
             </div>
           }
@@ -35,8 +37,9 @@ const Green = () => {
               aspectRatio={.66}
               className="mb-2" src={'../images/green/green.jpg'} alt='Green' />
           </div>
+          <GreenPress />
           <GreenInfo />
-          {/* <GreenImages /> */}
+          <GreenImages />
         </MobileView>
       }
     </div >)
