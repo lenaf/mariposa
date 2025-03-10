@@ -1,11 +1,11 @@
 import React from "react"
 
-import Berlin from "./berlin";
+import Green from "./green";
 
 
 const IndexPage = () => {
   return (
-    <Berlin />)
+    <Green />)
 }
 
 export default IndexPage
