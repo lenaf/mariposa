@@ -36,7 +36,12 @@ const IndexPage = () => {
   `)
   console.log(data)
   return (
-    <Green />)
+    <div>
+      {data?.allContentfulExhibits?.nodes?.[0]?.title}
+      <Green />
+
+    </div>
+  )
 }
 
 export default IndexPage
