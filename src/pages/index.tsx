@@ -2,6 +2,7 @@ import React from "react"
 
 import Green from "./green";
 import { graphql, useStaticQuery } from "gatsby";
+import Exhibit from "./Exhibit";
 
 
 const IndexPage = () => {
@@ -20,15 +21,18 @@ const IndexPage = () => {
             }
             heroImage {
               title
-              file {
-                url
-              }
+              gatsbyImageData(
+                width: 800
+                placeholder: BLURRED
+                formats: [AUTO]
+              )
             }
             images {
-              title
-              file {
-                url
-              }
+              gatsbyImageData(
+                width: 800
+                placeholder: BLURRED
+                formats: [AUTO]
+              )
             }
           }
       }
@@ -37,9 +41,7 @@ const IndexPage = () => {
   console.log(data)
   return (
     <div>
-      {data?.allContentfulExhibits?.nodes?.[0]?.title}
-      <Green />
-
+      <Exhibit exhibit={data?.allContentfulExhibits?.nodes?.[0]} />
     </div>
   )
 }
