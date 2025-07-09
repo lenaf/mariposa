@@ -1,7 +1,7 @@
 import React from "react"
 
-import Green from "./green";
 import { graphql, useStaticQuery } from "gatsby";
+import Aspen from "./aspen";
 
 
 const IndexPage = () => {
@@ -34,9 +34,8 @@ const IndexPage = () => {
       }
     }
   `)
-  console.log(data)
   return (
-    <Green />)
+    <Aspen />)
 }
 
 export default IndexPage

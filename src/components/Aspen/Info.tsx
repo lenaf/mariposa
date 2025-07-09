@@ -1,0 +1,75 @@
+import React from "react"
+import TextSection from "../TextSection"
+
+const AspenInfo = () => (
+  <TextSection headingText={'INFORMATION'}>
+    <div className="mb-4">
+      Mariposa is pleased to announce <i>Another Man’s Treasure</i>, a group exhibition opening July 11, 2025, in Aspen, Colorado. The show will take place at Alderfer Antiques, a functioning antique store housed in a 19th-century miner’s cabin on Main Street. The exhibition will include recent works by Casey Bolding, Drake Carr, Chivas Clem, Plum Cloutman, Chelsea Culprit, Max Xeno Karnig, Brian Kokoska, Antone Konst, Sean Landers, Peter McGough, Sean Micka, Alessandro Miotti, Sarah Miska, Jack Pierson, Alessandro Teoldi, and Chloe Wise, as well as two historic artworks from the estate of John Boskovitch.
+    </div>
+    <div className="mb-4">
+      The exhibition takes the antique store as its organizing principle—a space where objects from the past are gathered, displayed, and revalued. It is also a space of reimagination and coded meaning. With its excessive, sentimental, and idiosyncratic aesthetic, the antique store invites a camp sensibility: the tacky becomes expressive, the outdated becomes fashionable. The store resists the logic of the new and the linear pull of consumption. Instead, it asks us to engage the past as layered, flexible, and open to reinterpretation.
+    </div>
+    <div className="mb-4">
+      Artists are drawn to the same impulses– finding beauty in the overlooked, elevating the mundane, and transforming the discarded into the treasured. This exhibition brings together a multigenerational group of artists, each of whose practices reflect these concerns. In each of their practices, these artists do not merely reference the past; they reframe it, constructing new meanings from old forms to speak more urgently to the present.
+    </div>
+    <div className="mb-4">
+      Self-taught artist <b>Casey Bolding’s</b> (b. 1987, Denver, CO) Lanternfly, layers oil, acrylic, and insect bodies into a richly textured surface that feels unearthed rather than painted. The central figure, a native man enshrined in the carcass of a lanternfly, appears both ancient and imagined, a vessel for competing interpretations. By transforming an invasive insect into material and symbol, Bolding reframes the outcast as something worthy of reverence, while probing questions about symbiosis between humans and the natural world.
+    </div>
+    <div className="mb-4">
+      <b>John Boskovich</b> (1956-2006) approached language, iconography, and cultural detritus as raw material for sardonic reinvention. In the two works included in this exhibition—one repurposing commercial signage into deadpan text art, the other embroidering an Allen Ginsberg quote onto a Navajo rug—Boskovich transforms the readymade into a vessel for sentiment, irony, and ideological critique. Language becomes both object and intervention, reframed through an unapologetically personal lens.
+    </div>
+    <div className="mb-4">
+      In his multifaceted practice, <b>Drake Carr</b> (b. 1993, Flint, MI) explores performance, persona, and spectatorship through drawings, cutout figures, and architectural fragments that flirt with theatricality. Included in this show, a new hand-painted curtain, inspired by Hockney’s Contre Jour in the French Style, becomes both character and décor, echoing the exhibition’s domestic setting. With its frilled edges and candy-colored palette, the curtain channels the language of camp: expressive, excessive, and knowingly ornamental. It stands in for the body, draped in artifice, posing without pretense.
+    </div>
+    <div className="mb-4">
+      Working across performance, sculpture, and material-based painting, <b>Chivas Clem</b> (b. 1971, Paris, TX) draws from pop culture, personal history, and queer iconography to elevate the cast-off into devotional objects. Untitled (Bikini top)—rendered in self-tanning spray on canvas—depicts a close-up of JWOWW’s leopard-print swimsuit, immortalizing a fragment of Jersey Shore ephemera with reverent, tongue-in-cheek intensity. At once fetish, relic, and homage to reality TV excess, Clem’s work transforms the mass-produced into the mythic, smuggling sentiment through surface.
+    </div>
+    <div className="mb-4">
+      <b>Plum Cloutman’s</b> (b. 1994, London, United Kingdom) paintings transform the ornamental and the mundane into psychologically charged tableaux, where soft textures and dreamlike compositions belie deeper tensions. In Interior Life, the body becomes both vessel and frame—its digestive system encasing vignettes of food preparation and consumption. Bread rises, pizza bakes, a child eats—all rendered in concentric, tactile brushwork that evokes the compulsive rituals of comfort and craving. Cloutman blurs the line between sustenance and excess, turning domestic scenes into uneasy allegories of desire.
+    </div>
+    <div className="mb-4">
+      In her multifaceted practice, <b>Chelsea Culprit</b> (b. 1984, Paducah, KY) draws from histories of labor, gender, dance, craft, folk spirituality, and personal ancestry, knitting together representations of the body’s capacity for play, display, pleasure, performance, and the intractability of freedom and personal bondage. In Redneck Dentata, a toothed orifice with a long pink tongue, floppy bunny ears, and a bubblegum manicure races across a deserted field of daisies and swaying powerlines– a discombobulated pile of visceral forms adorned with denim curtain-pants, a rope belt, and a hissing snakeskin boot.
+    </div>
+    <div className="mb-4">
+      California- based artist <b>Max Xeno Karnig</b> (b. 1990, New York, NY) paints familiar motifs—fruits, flowers, portraits, drapery — rendering his subjects with a dual sense of care and quiet irreverence. While his small-scale paintings echo the chiaroscuro and precision of Dutch still life, they’re often punctuated by unexpected details: fictional characters, pop-cultural references, and moments of camp humor. His painting of a martini, included in this exhibition, is one such subject—offhand, elegant, and knowingly light-hearted. A twist floats in the glass beside its discarded rind, the scene poised with theatrical simplicity. The work channels Rembrandt and American Art Deco; crisp, lush, and a little glamorous.
+    </div>
+    <div className="mb-4">
+      Drawing from art historical references including Romanticism, Hudson River School and Group of Seven, <b>Brian Kokoska</b> (b. 1988 Burnaby, Canada) builds hypnotic paintings with didactic color blocking and layers, creating mysterious narratives and subplots built both from imagination as well as actual geographic sites and characters from life; friends, lovers and folklore. The night was clear and the moon was yellow, included in this exhibition, presents the profile of a cloaked figure beneath a glowing sky, where loose, emotive brushwork conjures a sense of solitude, secrecy, and the quiet theatricality of being seen—or hiding in plain sight.
+    </div>
+    <div className="mb-4">
+      <b>Antone Könst’s</b> (b. 1983, New Haven, CT) vivid floral paintings are both ecstatic and elegiac—offering not just depictions of flowers, but portals into emotional, erotic, and metaphysical states. Rooted in personal history and shaped by a deep engagement with art history and botany, his paintings brim with texture, personality, and latent narrative. Iris, the work included here, features oversized blooms erupting from a red vase whose faint human face quietly anchors the composition. Like much of Könst’s recent work, the painting balances exuberant sensuality with a contemplative stillness, treating the flower not as symbol, but as subject: radiant, reproductive, and alive with interiority.
+    </div>
+    <div className="mb-4">
+      <b>Sean Landers</b> (b. 1962, Palmer, MA) has a highly conceptual body of work that uses both visual and written language to expose everything from his innermost thoughts to raw truths about the contemporary art-world and the world at large. In his most recent body of work, Landers combines his practice of animal portraiture with hand-inscribed texts that evoke inner monologue. Initially inspired by 19th-century Aspen etchings left by Basque shepherds, who lived as nomads across the Western United States, these paintings simultaneously soothe and provoke. In Quiet Hours, a great horned owl stands sentinel against a night sky, beside a passage that contemplates insomnia etched into the bark of a tree. By layering image and language, Landers gives form to the vulnerable, often absurd project of trying to find clarity in solitude.
+    </div>
+    <div className="mb-4">
+      <b>Peter McGough</b> (b. 1958, Syracuse, NY) excavates queer history through the aesthetics of nostalgia, drawing on vintage ephemera, anachronism, and coded camp. In Flaming Youth, McGough reproduces the title design from a 1920s pulp novel exploring the sexual lives of Jazz Age women—an image he discovered while cleaning out the apartment of a drag queen named Minette in Brooklyn. Rendered with meticulous lettering and a wink of period illustration, the painting is both homage and resurrection: a sly tribute to bygone cultural anxieties, and to the queer lives that kept such histories alive through collection, preservation, and reinvention.
+    </div>
+    <div className="mb-4">
+      <b>Sean Micka’s</b> (b. 1979, Boston, MA) practice engages institutional critique through acts of replication and reframing. By faithfully painting photographs of auction catalogue entries and adopting their full captions as titles, he reveals how historical objects are mediated through the language of commerce and connoisseurship. In 31 A RARE .44 COLT..., Micka renders a photographic image of a 1999 Christie’s East auction listing for a worn Colt Dragoon revolver, transforming the catalogue page into an artwork that hovers between document and object. Referencing artists such as Louise Lawler, Andrea Fraser, and Christopher Williams, Micka exposes the mechanisms by which value, narrative, and authority are constructed. In Aspen, a former mining town steeped in Western mythology, the work refracts frontier nostalgia through the cool, forensic language of the marketplace.
+    </div>
+    <div className="mb-4">
+      <b>Alessandro Miotti’s</b> (b. 1991, Marostica, Italy) work revolves around iterative explorations of a single subject—for example dogs or cowboys—rendered with equal parts tenderness and tension. Fall into Morpheus' arms (sleep) depicts a lone cowboy reclining in the grass, his face obscured by a wide-brimmed hat, his pose soft, almost sensuous. Though drawn from the visual language of toughness, Miotti’s cowboys are neither heroic nor assertive; they are passive, introspective, caught in a moment of withdrawal. Beneath the surface swagger lies a quiet fragility—a longing for recognition tempered by the instinct to retreat.
+    </div>
+    <div className="mb-4">
+      <b>Sarah Miska</b> (b. 1983, Los Angeles, CA) investigates the mechanisms of control through the lens of equestrian culture, painting tightly cropped compositions and hyper-detailed surfaces to explore the tension between order and entropy. Known for her depictions of English riding culture—where immaculate braids and crisply tailored jackets begin to unravel under scrutiny—Miska reveals how elegance and discipline can fray into something more unruly. In this new work, Lasso, she turns her attention to the aesthetics of Western riding: gleaming belt buckles, denim, leather chaps, and knotted rope rendered with startling clarity. As always, Miska’s focus is not just on the uniform, but on the body within it—magnified, contained, and pushed to the edge of abstraction. Through this lens, the trappings of equestrianism become emblems of social performance, where dominance, desire, and tradition intertwine.
+    </div>
+    <div className="mb-4">
+      <b>Jack Pierson</b> (b. 1960, Plymouth, MA) employs photography, collage, sculptural assemblage and installation in pursuit of love, longing, kinship, poetry, celebration, youth, fantasy and identity. His folded photographs operate somewhere between poster, print, and personal artifact—eschewing the preciousness of the traditional framed image in favor of something more intimate, democratic, and direct. Rooted in a long-standing fascination with printed ephemera, Pierson draws from the visual language of magazines, celebrity, desire, and nostalgia. These works often arrive folded or creased, recalling images once pinned to walls or tucked into books—photographs made to be lived with rather than preserved. For Pierson, this modest format challenges hierarchies of presentation and authorship, offering the image not as object of veneration, but as something closer to memory: fragile, reproducible, and touched.
+    </div>
+    <div className="mb-4">
+      <b>Alessandro Teoldi’s</b> (b. 1985, Milan, Italy) practice is rooted in the language of collage, drawing from art historical references and modernist traditions to construct layered, materially rich compositions. His recent works expand this vocabulary, merging fabric, paper, and stitched elements with oil paint, graphite, charcoal, and pastel to create surfaces that are both tactile and pictorial. In this painting, Lattuga, a head of lettuce rests on a rumpled checked cloth, rendered with equal parts delicacy and density. Teoldi treats the humble still life not as a static subject, but as a site of quiet tension—between mediums, textures, and histories—where the act of cutting, staining, and layering becomes its own form of meaning-making.
+    </div>
+    <div className="mb-4">
+      <b>Chloe Wise’s</b> (b. 1990, Montreal, Canada) practice mines the visual language of aspiration, beauty culture, and consumerism with equal parts satire and sincerity. Known for her lush, stylized paintings that draw on Renaissance compositions as much as contemporary image culture, Wise explores how desire attaches to objects—particularly those that circulate in systems of status, intimacy, and exchange. Football is one such object: a bold, close-cropped image of manicured hands gripping a football pressed between bare breasts. At once erotic and absurd, the painting speaks to the body as commodity and icon. Originally created as a gift, its circuitous path back to the artist lends the work a sense of personal mythos—its presence here a reminder of how value accrues not just through markets, but through memory, miscommunication, and return.
+    </div>
+    <div className="mb-4">
+      The exhibition will be on view at Alderfer Antiques, 309 E Main St, Aspen, from July 11 - August 3, 2025. There will be an opening reception on Friday, July 11 from 6-8pm.
+    </div>
+    <div className="mb-4">
+      For press inquiries, please contact Alex Galan: alex.roman.galan@gmail.com.
+    </div>
+  </TextSection>
+)
+
+export default AspenInfo

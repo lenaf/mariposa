@@ -13,9 +13,15 @@ const Nav = () => {
                 About
             </Link>
             <Link
-                to={`/green`}
+                to={`/aspen`}
             >
                 Exhibitions
+            </Link>
+            <Link
+                className={`ml-2 mb-2 ${pathname === '/aspen' ? 'font-black' : ''}`}
+                to={`/aspen`}
+            >
+                Another Man’s Treasure
             </Link>
             <Link
                 className={`ml-2 mb-2 ${pathname === '/berlin' ? 'font-black' : ''}`}
