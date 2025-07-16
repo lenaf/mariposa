@@ -1,21 +1,23 @@
 import React from "react"
 
-import Green from "./green";
 import { graphql, useStaticQuery } from "gatsby";
-import Exhibit from "./Exhibit";
-
+import Exhibit from "../components/Exhibit";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
-      allContentfulExhibits {   
+      allContentfulExhibit {   
           nodes {
             id
             title
             startDate
             endDate
+            hours
             receptionDate
-            location
+            receptionHours
+            location {
+              raw
+            }
             information {
               raw
             }
@@ -28,6 +30,7 @@ const IndexPage = () => {
               )
             }
             images {
+              title
               gatsbyImageData(
                 width: 800
                 placeholder: BLURRED
@@ -38,10 +41,10 @@ const IndexPage = () => {
       }
     }
   `)
-  console.log(data)
+
   return (
     <div>
-      <Exhibit exhibit={data?.allContentfulExhibits?.nodes?.[0]} />
+      <Exhibit exhibit={data?.allContentfulExhibit?.nodes?.[1]} />
     </div>
   )
 }

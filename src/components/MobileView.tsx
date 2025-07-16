@@ -26,11 +26,9 @@ const MobileView = ({ children, }) => {
             className={`${isMobileNavOpen ? '' : '-translate-x-full'} fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform bg-white w-full dark:bg-gray-800`}
           >
             <div className="flex justify-end">
-              <button>
-                <span className="sr-only">Close menu</span>
-                <button onClick={() => setIsMobileNavOpen(false)}>
-                  <VscChromeClose size={16} />
-                </button>
+              <span className="sr-only">Close menu</span>
+              <button onClick={() => setIsMobileNavOpen(false)}>
+                <VscChromeClose size={16} />
               </button>
             </div>
             <Nav />
