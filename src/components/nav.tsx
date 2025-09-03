@@ -19,7 +19,7 @@ const Nav = () => {
         }`}
         to={`/berlin-public-display`}
       >
-        Peter Berlin: Public Display, Independent 20th Century
+        Independent 20th Century, 2025
       </Link>
       <Link
         className={`ml-2 mb-2 ${pathname === "/aspen" ? "font-black" : ""}`}
