@@ -6,7 +6,7 @@ import Exhibit from "../components/Exhibit";
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
-      allContentfulExhibit {   
+      allContentfulExhibit(sort: {startDate: DESC}) {   
           nodes {
             id
             title
@@ -44,7 +44,7 @@ const IndexPage = () => {
 
   return (
     <div>
-      <Exhibit exhibit={data?.allContentfulExhibit?.nodes?.[1]} />
+      <Exhibit exhibit={data?.allContentfulExhibit?.nodes?.[0]} />
     </div>
   )
 }

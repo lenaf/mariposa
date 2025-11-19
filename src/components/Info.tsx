@@ -7,7 +7,7 @@ import { BLOCKS, INLINES, MARKS } from "@contentful/rich-text-types"
 const Info = ({ exhibit }: { exhibit: IExhibit }) => (
   <TextSection headingText={'INFORMATION'}>
 
-    {renderRichText(exhibit.information, {
+    {exhibit.information && renderRichText(exhibit.information, {
       renderMark: {
         [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
       },

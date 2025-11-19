@@ -1,9 +1,23 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import { useLocation } from '@reach/router';
 
 const Nav = () => {
     const { pathname } = useLocation();
+    const data = useStaticQuery(graphql`
+        {
+            allContentfulExhibit(sort: {startDate: DESC}, filter: {node_locale: {eq: "en-US"}}) {
+                nodes {
+                    id
+                    title
+                    startDate
+                }
+            }
+        }
+    `);
+
+    const exhibits = data.allContentfulExhibit.nodes;
+
     return (
         <div className="flex flex-col text-start justify-start gap-x-4.5 leading-5 font-thin">
             <Link
@@ -12,57 +26,21 @@ const Nav = () => {
             >
                 About
             </Link>
-            <Link
-                to={`/green`}
-            >
-                Exhibitions
-            </Link>
-            <Link
-                className={`ml-2 mb-2 ${pathname === '/berlin' ? 'font-black' : ''}`}
-                to={`/berlin`}
-            >
-                Peter Berlin: Permission to Stare
-            </Link>
-            <Link
-                className={`ml-2 mb-2 ${pathname === '/green' ? 'font-black' : ''}`}
-                to={`/green`}
-            >
-                Ethan James Green: Bombshell
-            </Link>
-            <Link
-                className={`ml-2 mb-2 ${pathname === '/basel' ? 'font-black' : ''}`}
-                to={`/basel`}
-            >
-                Basel Social Club 2024
-            </Link>
-            <Link
-                className={`ml-2 mb-2 ${pathname === '/culprit' ? 'font-black' : ''}`}
-                to={`/culprit`}
-            >
-                Chelsea Culprit: PSYCHOPOMP
-            </Link>
-            <Link
-                className={`ml-2 mb-2 ${pathname === '/carr' ? 'font-black' : ''}`}
-                to={`/carr`}
-            >
-                Drake Carr: Les Walk-ins
-            </Link>
-            <Link
-                className={`ml-2 mb-2 ${pathname === '/burnell' ? 'font-black' : ''}`}
-                to={`/burnell`}
-            >
-                Carly Burnell: où il n’y a rien / where there is nothing
-            </Link>
-            <Link
-                className={`ml-2 ${pathname === '/schlesinger' ? 'font-black' : ''}`}
-                to={`/schlesinger`}
-            >
-                Peter Schlesinger: France 1969 - 1979
-            </Link>
+            <div>Exhibitions</div>
+            {exhibits.map((exhibit: any) => {
+                const slug = exhibit.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                return (
+                    <Link
+                        key={exhibit.id}
+                        className={`ml-2 mb-2 ${pathname === `/exhibit/${slug}` ? 'font-black' : ''}`}
+                        to={`/exhibit/${slug}`}
+                    >
+                        {exhibit.title}
+                    </Link>
+                );
+            })}
         </div>
     )
 }
 
 export default Nav
-
-

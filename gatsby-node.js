@@ -1,7 +1,28 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require('path')
 
-// You can delete this file if you're not using it
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+  
+  const result = await graphql(`
+    {
+      allContentfulExhibit {
+        nodes {
+          id
+          title
+        }
+      }
+    }
+  `)
+
+  result.data.allContentfulExhibit.nodes.forEach((exhibit) => {
+    const slug = exhibit.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+    
+    createPage({
+      path: `/exhibit/${slug}`,
+      component: path.resolve('./src/templates/exhibit.tsx'),
+      context: {
+        id: exhibit.id,
+      },
+    })
+  })
+}

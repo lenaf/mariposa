@@ -28,9 +28,9 @@ const TitleAndDates = ({ exhibit }: { exhibit: IExhibit }) => {
           <FormatedDate date={exhibit.receptionDate} />
           <span>{exhibit.receptionHours}</span>
         </div>}
-      <div>{
+      {exhibit.location && <div>{
         renderRichText(exhibit.location)}
-      </div>
+      </div>}
     </div>
   )
 }
