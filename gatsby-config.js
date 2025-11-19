@@ -10,6 +10,8 @@ module.exports = {
       options: {
         spaceId: `glwon1r6d54c`,
         accessToken: `ONdLDTEti6MMz6YiAVTQP_xQ2SZM1wonJ414YYvgogo`,
+        enableTags: true,
+        downloadLocal: true,
       },
     },
     `gatsby-plugin-image`,
