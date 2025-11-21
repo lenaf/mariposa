@@ -5,22 +5,17 @@ import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { BLOCKS, INLINES, MARKS } from "@contentful/rich-text-types"
 
 const Press = ({ exhibit }: { exhibit: IExhibit }) => {
-  if (!exhibit.press) return null;
+  if (!exhibit.press) return null
   return (
-    <TextSection headingText={'PRESS'}>
-
+    <TextSection headingText={"PRESS"}>
       {renderRichText(exhibit.press, {
         renderMark: {
-          [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
+          [MARKS.BOLD]: text => <b className="font-bold">{text}</b>,
         },
         renderNode: {
           [INLINES.HYPERLINK]: (node, children) => {
             const { uri } = node.data
-            return (
-              <a href={uri} className="underline">
-                {children}
-              </a>
-            )
+            return <a href={uri}>{children}</a>
           },
           [BLOCKS.HEADING_2]: (node, children) => {
             return <h2>{children}</h2>
@@ -30,8 +25,6 @@ const Press = ({ exhibit }: { exhibit: IExhibit }) => {
           },
         },
       })}
-
-
     </TextSection>
   )
 }

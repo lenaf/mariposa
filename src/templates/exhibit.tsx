@@ -7,37 +7,32 @@ const ExhibitPage = ({ data }: any) => {
 }
 
 export const query = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     contentfulExhibit(id: { eq: $id }) {
-        id
+      id
+      title
+      startDate
+      endDate
+      hours
+      receptionDate
+      receptionHours
+      location {
+        raw
+      }
+      information {
+        raw
+      }
+      press {
+        raw
+      }
+      heroImage {
         title
-        startDate
-        endDate
-        hours
-        receptionDate
-        receptionHours
-        location {
-          raw
-        }
-        information {
-          raw
-        }
-        heroImage {
-          title
-          gatsbyImageData(
-            width: 800
-            placeholder: BLURRED
-            formats: [AUTO]
-          )
-        }
-        images {
-          title
-          gatsbyImageData(
-            width: 800
-            placeholder: BLURRED
-            formats: [AUTO]
-          )
-        }
+        gatsbyImageData(width: 800, placeholder: BLURRED, formats: [AUTO])
+      }
+      images {
+        title
+        gatsbyImageData(width: 800, placeholder: BLURRED, formats: [AUTO])
+      }
     }
   }
 `

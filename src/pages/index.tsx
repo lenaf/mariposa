@@ -21,6 +21,9 @@ const IndexPage = () => {
             information {
               raw
             }
+            press {
+              raw
+            }
             heroImage {
               title
               gatsbyImageData(
