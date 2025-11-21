@@ -15,7 +15,7 @@ const Press = ({ exhibit }: { exhibit: IExhibit }) => {
         renderNode: {
           [INLINES.HYPERLINK]: (node, children) => {
             const { uri } = node.data
-            return <a href={uri}>{children}</a>
+            return <a href={uri} target="_blank" rel="noopener noreferrer">{children}</a>
           },
           [BLOCKS.HEADING_2]: (node, children) => {
             return <h2>{children}</h2>
