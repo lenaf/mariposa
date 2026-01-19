@@ -13,10 +13,17 @@ const Nav = () => {
                     startDate
                 }
             }
+            allContentfulArtists(sort: {name: ASC}, filter: {node_locale: {eq: "en-US"}}) {
+                nodes {
+                    id
+                    name
+                }
+            }
         }
     `);
 
     const exhibits = data.allContentfulExhibit.nodes;
+    const artists = data.allContentfulArtists.nodes;
 
     return (
         <div className="flex flex-col text-start justify-start gap-x-4.5 leading-5 font-thin">
@@ -36,6 +43,19 @@ const Nav = () => {
                         to={`/exhibit/${slug}`}
                     >
                         {exhibit.title}
+                    </Link>
+                );
+            })}
+            <div className="mt-4">Artists</div>
+            {artists.map((artist: any) => {
+                const slug = artist.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                return (
+                    <Link
+                        key={artist.id}
+                        className={`ml-2 mb-2 ${pathname === `/artist/${slug}` ? 'font-black' : ''}`}
+                        to={`/artist/${slug}`}
+                    >
+                        {artist.name}
                     </Link>
                 );
             })}
