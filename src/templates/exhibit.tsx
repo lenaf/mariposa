@@ -27,11 +27,11 @@ export const query = graphql`
       }
       heroImage {
         title
-        gatsbyImageData(width: 800, placeholder: BLURRED, formats: [AUTO])
+        gatsbyImageData(width: 600, placeholder: BLURRED, formats: [AUTO])
       }
       images {
         title
-        gatsbyImageData(width: 800, placeholder: BLURRED, formats: [AUTO])
+        gatsbyImageData(width: 600, placeholder: BLURRED, formats: [AUTO])
       }
     }
   }
