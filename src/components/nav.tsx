@@ -36,19 +36,20 @@ const Nav = () => {
         <div className="flex flex-col text-start justify-start gap-x-4.5 leading-5 font-thin">
             <div 
                 onClick={(e) => {
+                    e.preventDefault();
                     e.stopPropagation();
                     setArtistsOpen(!artistsOpen);
                 }}
                 className="mb-2 cursor-pointer select-none"
             >
-                <span className="inline-block w-3">{artistsOpen ? '▾' : '▸'}</span> Artists
+                Artists
             </div>
             {artistsOpen && artists.map((artist: any) => {
                 const slug = artist.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
                 return (
                     <Link
                         key={artist.id}
-                        className={`ml-5 mb-2 block ${pathname === `/artist/${slug}` ? 'font-black' : ''}`}
+                        className={`ml-2 mb-2 block ${pathname === `/artist/${slug}` ? 'font-black' : ''}`}
                         to={`/artist/${slug}`}
                     >
                         {artist.name}
@@ -57,19 +58,20 @@ const Nav = () => {
             })}
             <div 
                 onClick={(e) => {
+                    e.preventDefault();
                     e.stopPropagation();
                     setExhibitsOpen(!exhibitsOpen);
                 }}
                 className="mb-2 cursor-pointer select-none"
             >
-                <span className="inline-block w-3">{exhibitsOpen ? '▾' : '▸'}</span> Exhibitions
+                Exhibitions
             </div>
             {exhibitsOpen && exhibits.map((exhibit: any) => {
                 const slug = exhibit.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
                 return (
                     <Link
                         key={exhibit.id}
-                        className={`ml-5 mb-2 block ${pathname === `/exhibit/${slug}` ? 'font-black' : ''}`}
+                        className={`ml-2 mb-2 block ${pathname === `/exhibit/${slug}` ? 'font-black' : ''}`}
                         to={`/exhibit/${slug}`}
                     >
                         {exhibit.title}

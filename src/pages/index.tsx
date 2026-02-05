@@ -27,7 +27,7 @@ const IndexPage = () => {
             heroImage {
               title
               gatsbyImageData(
-                width: 1200
+                width: 800
                 placeholder: BLURRED
                 formats: [AUTO]
               )
@@ -35,7 +35,7 @@ const IndexPage = () => {
             images {
               title
               gatsbyImageData(
-                width: 1200
+                width: 800
                 placeholder: BLURRED
                 formats: [AUTO]
               )

@@ -136,7 +136,7 @@ export const query = graphql`
         }
         image {
           title
-          gatsbyImageData(width: 1200, placeholder: BLURRED, formats: [AUTO])
+          gatsbyImageData(width: 800, placeholder: BLURRED, formats: [AUTO])
         }
       }
     }
