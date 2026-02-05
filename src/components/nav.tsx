@@ -1,9 +1,12 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import { useLocation } from '@reach/router';
 
 const Nav = () => {
     const { pathname } = useLocation();
+    const [artistsOpen, setArtistsOpen] = useState(false);
+    const [exhibitsOpen, setExhibitsOpen] = useState(false);
+    
     const data = useStaticQuery(graphql`
         {
             allContentfulExhibit(sort: {startDate: DESC}, filter: {node_locale: {eq: "en-US"}}) {
@@ -23,30 +26,44 @@ const Nav = () => {
     `);
 
     const exhibits = data.allContentfulExhibit.nodes;
-    const artists = data.allContentfulArtists.nodes;
+    const artists = data.allContentfulArtists.nodes.sort((a: any, b: any) => {
+        const lastNameA = a.name.split(' ').pop();
+        const lastNameB = b.name.split(' ').pop();
+        return lastNameA.localeCompare(lastNameB);
+    });
 
     return (
         <div className="flex flex-col text-start justify-start gap-x-4.5 leading-5 font-thin">
-            <div>Artists</div>
-            {artists.map((artist: any) => {
+            <div 
+                onClick={() => setArtistsOpen(!artistsOpen)}
+                className="mb-2 cursor-pointer select-none"
+            >
+                <span className="inline-block w-3">{artistsOpen ? '▾' : '▸'}</span> Artists
+            </div>
+            {artistsOpen && artists.map((artist: any) => {
                 const slug = artist.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
                 return (
                     <Link
                         key={artist.id}
-                        className={`ml-2 mb-2 ${pathname === `/artist/${slug}` ? 'font-black' : ''}`}
+                        className={`ml-5 mb-2 block ${pathname === `/artist/${slug}` ? 'font-black' : ''}`}
                         to={`/artist/${slug}`}
                     >
                         {artist.name}
                     </Link>
                 );
             })}
-            <div className="mt-4">Exhibitions</div>
-            {exhibits.map((exhibit: any) => {
+            <div 
+                onClick={() => setExhibitsOpen(!exhibitsOpen)}
+                className="mb-2 cursor-pointer select-none"
+            >
+                <span className="inline-block w-3">{exhibitsOpen ? '▾' : '▸'}</span> Exhibitions
+            </div>
+            {exhibitsOpen && exhibits.map((exhibit: any) => {
                 const slug = exhibit.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
                 return (
                     <Link
                         key={exhibit.id}
-                        className={`ml-2 mb-2 ${pathname === `/exhibit/${slug}` ? 'font-black' : ''}`}
+                        className={`ml-5 mb-2 block ${pathname === `/exhibit/${slug}` ? 'font-black' : ''}`}
                         to={`/exhibit/${slug}`}
                     >
                         {exhibit.title}
