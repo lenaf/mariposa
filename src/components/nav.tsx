@@ -27,26 +27,7 @@ const Nav = () => {
 
     return (
         <div className="flex flex-col text-start justify-start gap-x-4.5 leading-5 font-thin">
-            <Link
-                to={`/about`}
-                className={`mb-2 ${pathname === '/about' ? 'font-black' : ''}`}
-            >
-                About
-            </Link>
-            <div>Exhibitions</div>
-            {exhibits.map((exhibit: any) => {
-                const slug = exhibit.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-                return (
-                    <Link
-                        key={exhibit.id}
-                        className={`ml-2 mb-2 ${pathname === `/exhibit/${slug}` ? 'font-black' : ''}`}
-                        to={`/exhibit/${slug}`}
-                    >
-                        {exhibit.title}
-                    </Link>
-                );
-            })}
-            <div className="mt-4">Artists</div>
+            <div>Artists</div>
             {artists.map((artist: any) => {
                 const slug = artist.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
                 return (
@@ -59,6 +40,25 @@ const Nav = () => {
                     </Link>
                 );
             })}
+            <div className="mt-4">Exhibitions</div>
+            {exhibits.map((exhibit: any) => {
+                const slug = exhibit.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                return (
+                    <Link
+                        key={exhibit.id}
+                        className={`ml-2 mb-2 ${pathname === `/exhibit/${slug}` ? 'font-black' : ''}`}
+                        to={`/exhibit/${slug}`}
+                    >
+                        {exhibit.title}
+                    </Link>
+                );
+            })}
+            <Link
+                to={`/about`}
+                className={`mt-4 ${pathname === '/about' ? 'font-black' : ''}`}
+            >
+                About
+            </Link>
         </div>
     )
 }
