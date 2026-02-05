@@ -35,7 +35,10 @@ const Nav = () => {
     return (
         <div className="flex flex-col text-start justify-start gap-x-4.5 leading-5 font-thin">
             <div 
-                onClick={() => setArtistsOpen(!artistsOpen)}
+                onClick={(e) => {
+                    e.stopPropagation();
+                    setArtistsOpen(!artistsOpen);
+                }}
                 className="mb-2 cursor-pointer select-none"
             >
                 <span className="inline-block w-3">{artistsOpen ? '▾' : '▸'}</span> Artists
@@ -53,7 +56,10 @@ const Nav = () => {
                 );
             })}
             <div 
-                onClick={() => setExhibitsOpen(!exhibitsOpen)}
+                onClick={(e) => {
+                    e.stopPropagation();
+                    setExhibitsOpen(!exhibitsOpen);
+                }}
                 className="mb-2 cursor-pointer select-none"
             >
                 <span className="inline-block w-3">{exhibitsOpen ? '▾' : '▸'}</span> Exhibitions
