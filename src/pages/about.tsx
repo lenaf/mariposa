@@ -13,7 +13,7 @@ const About = (props: PageProps) => {
         title="About - Mariposa Gallery"
         description="Contact and location information for Mariposa Gallery"
       />
-      <div className="flex min-h-[calc(100vh-130px)] md:min-h-screen items-center justify-center">
+      <div className="flex min-h-[calc(100vh-180px)] md:min-h-screen items-center justify-center">
         <div className="max-w-[240px] w-full text-center">
           {/* LA Location */}
           <div className="mb-8">
