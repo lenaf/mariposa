@@ -9,6 +9,7 @@ module.exports = {
       glaston: ["Glaston", "serif"],
       minion: ["Minion", "sans-serif"],
       vremena: ["Vremena", "sans-serif"],
+      bigcaslon: ["Big Caslon", "serif"],
     },
     extend: {
       colors: {

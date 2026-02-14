@@ -39,6 +39,14 @@ h3 {
   src: url(/fonts/MinionPro-Regular.otf);
 }
 
+@font-face {
+  font-family: 'Big Caslon';
+  src: url(/fonts/BigCaslon.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 .divider {
   background-color: transparent;
   cursor: col-resize

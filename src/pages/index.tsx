@@ -1,55 +1,12 @@
 import React from "react"
-
-import { graphql, useStaticQuery } from "gatsby";
-import Exhibit from "../components/Exhibit";
+import { navigate } from "gatsby"
 
 const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allContentfulExhibit(sort: {startDate: DESC}) {   
-          nodes {
-            id
-            title
-            startDate
-            endDate
-            hours
-            receptionDate
-            receptionHours
-            location {
-              raw
-            }
-            information {
-              raw
-            }
-            press {
-              raw
-            }
-            heroImage {
-              title
-              gatsbyImageData(
-                width: 800
-                placeholder: BLURRED
-                formats: [AUTO]
-              )
-            }
-            images {
-              title
-              gatsbyImageData(
-                width: 800
-                placeholder: BLURRED
-                formats: [AUTO]
-              )
-            }
-          }
-      }
-    }
-  `)
+  React.useEffect(() => {
+    navigate("/about")
+  }, [])
 
-  return (
-    <div>
-      <Exhibit exhibit={data?.allContentfulExhibit?.nodes?.[0]} />
-    </div>
-  )
+  return null
 }
 
 export default IndexPage
