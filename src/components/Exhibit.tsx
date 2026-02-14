@@ -41,7 +41,7 @@ const Exhibit = ({ exhibit }: { exhibit: IExhibit }) => {
             </div>
           }
           renderImageCol={() =>
-            <Images images={exhibit.images} />
+            <Images images={exhibit.images} heroImage={exhibit.heroImage} />
           }
         /> :
         < MobileView >

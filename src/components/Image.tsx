@@ -21,9 +21,11 @@ export const Image = ({ image, className }: ImageProps) => {
   )
 }
 
-export const Images = ({ images }: ImagesProps) => {
+export const Images = ({ images, heroImage }: ImagesProps & { heroImage?: ImageDataLike & { title: string } }) => {
 
-  if (!images) return null;
+  if (!images || images.length === 0) {
+    return heroImage ? <Image image={heroImage} className="mb-2" /> : null;
+  }
 
   return (
     <div>{images.map((image, index) => <Image image={image} key={index} className="mb-2" />)}</div>
