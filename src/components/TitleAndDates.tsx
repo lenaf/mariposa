@@ -5,10 +5,12 @@ import { renderRichText } from "gatsby-source-contentful/rich-text";
 const FormatedDate = ({ date }: { date?: string }) => {
   if (!date) return null;
   const dateArray = date?.split('-');
+  const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const monthName = monthNames[parseInt(dateArray[1]) - 1];
 
   return (
     <span>
-      <span className="font-glaston">{Intl.DateTimeFormat('en', { month: 'long' }).format(new Date(dateArray[1]))} </span>
+      <span className="font-glaston">{monthName} </span>
       <span>{`${dateArray[2]}, ${dateArray[0]}`} </span>
     </span>
   )
