@@ -28,7 +28,6 @@ const About = (props: PageProps) => {
             >
               <p>2700 N Beachwood Drive</p>
               <p>Los Angeles, California</p>
-              <p className="italic">Wednesday — Saturday, 11-5pm</p>
             </div>
           </div>
 
@@ -45,7 +44,6 @@ const About = (props: PageProps) => {
             >
               <p>150 W 28th Street</p>
               <p>New York, New York</p>
-              <p className="italic">by appointment only</p>
             </div>
           </div>
 
