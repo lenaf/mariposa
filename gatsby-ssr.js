@@ -8,6 +8,8 @@
 
 import React from 'react';
 
+export { wrapPageElement } from './src/wrapPageElement';
+
 export const onRenderBody = ({ setHeadComponents }) => {
     setHeadComponents([
         <link

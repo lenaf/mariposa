@@ -1,26 +1,9 @@
 import React from "react"
-import Nav from "./nav";
-import { Link } from "gatsby";
-import Logo from "./logo";
 import { Container, Section, Bar } from '@column-resizer/react';
 
 const DesktopView = ({ renderTextCol, renderImageCol }) => {
   return (
     <Container className="h-screen">
-
-      <Section
-        defaultSize={300}
-        minSize={50}
-        className="flex flex-col pt-10.5 pb-9 pl-9.5 pr-4"  >
-        <nav>
-          <Link className="shrink flex mb-6" to={`/`}>
-            <h1><Logo className="flex justify-start" /></h1>
-          </Link>
-          <Nav />
-        </nav>
-      </Section>
-
-      <Bar size={10} className='divider' />
 
       <Section
         defaultSize={500}

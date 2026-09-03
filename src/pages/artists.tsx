@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import type { HeadFC } from "gatsby"
-import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { slugify } from "../utils/slug"
 
@@ -24,15 +23,13 @@ const ArtistsPage = () => {
   })
 
   return (
-    <Layout>
-      <ul className="text-xs md:text-15 font-vremena">
-        {artists.map((artist: any) => (
-          <li key={artist.id} className="mb-2">
-            <Link to={`/artist/${slugify(artist.name)}`}>{artist.name}</Link>
-          </li>
-        ))}
-      </ul>
-    </Layout>
+    <ul className="text-xs md:text-15 font-vremena">
+      {artists.map((artist: any) => (
+        <li key={artist.id} className="mb-2">
+          <Link to={`/artist/${slugify(artist.name)}`}>{artist.name}</Link>
+        </li>
+      ))}
+    </ul>
   )
 }
 

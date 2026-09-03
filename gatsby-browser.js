@@ -5,3 +5,5 @@
  */
 
 import './src/styles/globals.css'
+
+export { wrapPageElement } from './src/wrapPageElement'

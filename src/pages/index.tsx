@@ -1,15 +1,10 @@
 import React from "react"
 import type { HeadFC } from "gatsby"
-import Layout from "../components/layout"
 import Seo from "../components/seo"
 import AboutContent from "../components/AboutContent"
 import { artGalleryJsonLd } from "../utils/structuredData"
 
-const IndexPage = () => (
-  <Layout>
-    <AboutContent />
-  </Layout>
-)
+const IndexPage = () => <AboutContent />
 
 export const Head: HeadFC = () => (
   <Seo
