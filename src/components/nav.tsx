@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import { useLocation } from '@reach/router';
+import { slugify } from "../utils/slug"
 
 const Nav = () => {
     const { pathname } = useLocation();
@@ -45,7 +46,7 @@ const Nav = () => {
                 Artists
             </div>
             {artistsOpen && artists.map((artist: any) => {
-                const slug = artist.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                const slug = slugify(artist.name);
                 return (
                     <Link
                         key={artist.id}
@@ -67,7 +68,7 @@ const Nav = () => {
                 Exhibitions
             </div>
             {exhibitsOpen && exhibits.map((exhibit: any) => {
-                const slug = exhibit.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                const slug = slugify(exhibit.title);
                 return (
                     <Link
                         key={exhibit.id}

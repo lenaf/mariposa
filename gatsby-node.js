@@ -1,4 +1,5 @@
 const path = require('path')
+const { slugify } = require('./src/utils/slug')
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -15,7 +16,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   exhibitResult.data.allContentfulExhibit.nodes.forEach((exhibit) => {
-    const slug = exhibit.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+    const slug = slugify(exhibit.title)
     
     createPage({
       path: `/exhibit/${slug}`,
@@ -38,7 +39,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   artistResult.data.allContentfulArtists.nodes.forEach((artist) => {
-    const slug = artist.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+    const slug = slugify(artist.name)
     
     createPage({
       path: `/artist/${slug}`,

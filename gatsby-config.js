@@ -3,6 +3,7 @@ module.exports = {
     title: `Mariposa Gallery`,
     description: `Paris, France`,
     author: `Alec`,
+    siteUrl: `https://www.mariposa.gallery`,
   },
   plugins: [
     {
@@ -16,7 +17,14 @@ module.exports = {
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        policy: [{ userAgent: `*`, allow: `/` }],
+        sitemap: `https://www.mariposa.gallery/sitemap-index.xml`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -38,11 +46,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Mariposa Gallery`,
+        short_name: `Mariposa`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ffffff`,
+        theme_color: `#000000`,
         display: `minimal-ui`,
         icon: `src/images/butterfly.png`, // This path is relative to the root of the site.
       },

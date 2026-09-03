@@ -1,12 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
+import type { HeadFC } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { BLOCKS, MARKS } from "@contentful/rich-text-types"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import DesktopView from "../components/DesktopView"
 import MobileView from "../components/MobileView"
+import { richTextToPlainText } from "../utils/richText"
+import { getPersonJsonLd } from "../utils/structuredData"
 
 const ArtistPage = ({ data }: any) => {
   const artist = data.contentfulArtists
@@ -14,7 +17,6 @@ const ArtistPage = ({ data }: any) => {
 
   return (
     <div className="text-xs md:text-15 font-vremena">
-      <SEO title={artist.name} />
       {breakpoints.desktop ? (
         <DesktopView
           renderTextCol={() => (
@@ -142,5 +144,29 @@ export const query = graphql`
     }
   }
 `
+
+export const Head: HeadFC<{ contentfulArtists: any }> = ({ data, location }) => {
+  const artist = data.contentfulArtists
+  const description =
+    richTextToPlainText(artist.bio?.raw) ||
+    `Artwork and biography for ${artist.name} at Mariposa Gallery.`
+  const image = artist.works?.[0]?.image?.gatsbyImageData?.images?.fallback?.src
+
+  return (
+    <Seo
+      title={`${artist.name} | Mariposa Gallery`}
+      description={description}
+      pathname={location.pathname}
+      image={image}
+      type="profile"
+      jsonLd={getPersonJsonLd({
+        name: artist.name,
+        description,
+        image,
+        pathname: location.pathname,
+      })}
+    />
+  )
+}
 
 export default ArtistPage

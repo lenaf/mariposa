@@ -1,6 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
+import type { HeadFC } from "gatsby"
 import Exhibit from "../components/Exhibit"
+import Seo from "../components/seo"
+import { richTextToPlainText } from "../utils/richText"
 
 const ExhibitPage = ({ data }: any) => {
   return <Exhibit exhibit={data.contentfulExhibit} />
@@ -36,5 +39,24 @@ export const query = graphql`
     }
   }
 `
+
+export const Head: HeadFC<{ contentfulExhibit: any }> = ({ data, location }) => {
+  const exhibit = data.contentfulExhibit
+  const description =
+    richTextToPlainText(exhibit.information?.raw) ||
+    (exhibit.startDate
+      ? `${exhibit.title} at Mariposa Gallery, ${exhibit.startDate} – ${exhibit.endDate || "present"}.`
+      : `${exhibit.title} at Mariposa Gallery.`)
+  const image = exhibit.heroImage?.gatsbyImageData?.images?.fallback?.src
+
+  return (
+    <Seo
+      title={`${exhibit.title} | Mariposa Gallery`}
+      description={description}
+      pathname={location.pathname}
+      image={image}
+    />
+  )
+}
 
 export default ExhibitPage

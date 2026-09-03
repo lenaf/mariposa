@@ -1,6 +1,5 @@
 import React from "react"
 
-import SEO from "./seo"
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 import DesktopView from "./DesktopView";
 import Info from "./Info";
@@ -30,7 +29,6 @@ const Exhibit = ({ exhibit }: { exhibit: IExhibit }) => {
 
   return (
     <div className="text-xs md:text-15 font-vremena">
-      <SEO title="Mariposa Gallery" description={exhibit.title} />
       {breakpoints.desktop ?
         <DesktopView
           renderTextCol={() =>
